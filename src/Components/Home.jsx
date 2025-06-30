@@ -23,9 +23,10 @@ const Home = () => {
           </p>
           <button
             className="flex items-center gap-2 px-6 py-3 bg-[#BBA5E0] text-black font-medium
-           rounded-md hover:bg-purple-300 transition duration-300 cursor-pointer"
+           rounded-md hover:bg-purple-300 transition duration-300 cursor-pointer
+           shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
           >
-            <img src={calendar} alt="calendar" className="w-5 h-5" />
+            <img src={calendar} alt="calendar" className="w-5 h-5 " />
             Speak with a Life Coach Now
           </button>
         </div>

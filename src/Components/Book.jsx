@@ -22,7 +22,7 @@ const About = () => {
           </p>
           <p className="text-[#9363C4] font-semibold mb-6 mt-6">Only $4.99</p>
           <button
-            className="bg-purple-300 hover:bg-purple-400  text-black font-medium px-2 py-2 gap-2 mt-8
+            className="bg-[#C8B8E8] hover:bg-purple-100  text-black font-medium px-2 py-2 gap-2 mt-8
         rounded-md shadow flex items-center justify-center mx-auto md:mx-0"
           >
             <img src={calendar} alt="" className="w-8 h-8" />

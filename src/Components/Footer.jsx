@@ -16,7 +16,7 @@ const Footer = () => {
         <p className="ml-4 mt-4 text-[#454545]"> Terms of Service</p>
       </div>
       <div className="mt-20">
-        <h4 className="font-semibold text-lg text-[#27272A]">Useful Links</h4>
+        <h4 className="font-semibold text-lg mt-4 text-[#27272A]">Useful Links</h4>
         <ul className="mt-13 mb-10 ">
           <li className="text-[#454545]"><Link to = "/">Home </Link></li>
           <li className="mt-3 text-[#454545]"><Link to= '/About'>About Us </Link></li>
@@ -26,7 +26,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="mt-20">
-        <h3 className="font-semibold text-lg text-[#27272A]">Follow us on Social</h3>
+        <h3 className="font-semibold text-lg mt-4 text-[#27272A]">Follow us on Social</h3>
         <div className="flex gap-2 mt-12">
           <img src={fb} alt="" className="w-8 h-8" />
           <img src={insta} alt="" className="w-8 h-8" />
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-20">
-        <h3 className="font-semibold text-lg text-[#27272A]">Download The App</h3>
+        <h3 className="font-semibold text-lg mt-4 text-[#27272A]">Download The App</h3>
 
         <div className="flex mt-12 gap-2">
           <img src={google} alt="" className="w-23" />

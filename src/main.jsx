@@ -15,7 +15,9 @@ import Admin from './Pages/Admin.jsx'
 import User from './Pages/User.jsx'
 import { Toaster } from 'react-hot-toast'
 import Session from './Pages/Session.jsx'
-
+import Chats from './Pages/Chats.jsx'
+import Earnings from './Pages/Earnings.jsx'
+import Availability from './Pages/Availability.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
       { path: 'Price', element: <Price /> },
        { path: 'Coaches', element: <Coaches /> },
       { path: 'Contact', element: <Contact /> },
-      
+         
     ],
   },
   {
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
       { path: 'Admin', element: <Admin /> },
       { path: 'User', element: <User /> },
       {path:"Session", element : <Session/>},
+      {path:"Chats", element : <Chats/>},
+ 
+  {path:"Earnings", element : <Earnings/>},
+   {path:"Availability", element : <Availability/>},
     ],
   },
 ])

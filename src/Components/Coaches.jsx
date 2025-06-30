@@ -50,8 +50,9 @@ const FindCard = ({ coach }) => (
 
     <div className="flex   gap-6   ml-3 mb-2">
       <button 
-        className="flex items-center justify-center gap-2 bg-purple-300 text-black
-       font-medium py-2 rounded cursor-pointer hover:bg-purple-400 transition w-28"
+        className="flex items-center justify-center gap-2 bg-[#C8B8E8] text-black
+       font-medium py-2 rounded cursor-pointer hover:bg-purple-400 transition w-28
+       shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
       >
         <img src={calendar} alt="" className="w-4 h-4 " /> Book a call
       </button>
@@ -88,9 +89,10 @@ const Find = () => {
   {/* Button at the bottom centered across full width */}
   <div className=" flex justify-center mt-8 mb-10">
     <button
-      className="bg-purple-300 text-black font-semibold py-3 px-8 
-      rounded-md shadow-md hover:bg-purple-400 transition duration-300 ease-in-out 
-      cursor-pointer flex items-center gap-2"
+      className="bg-[#C8B8E8] text-black font-semibold py-3 px-8 
+      rounded-md  hover:bg-purple-400 transition duration-300 ease-in-out 
+      cursor-pointer flex items-center gap-2
+      shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
     >
       See all life coaches
       <img src={arrow} alt="arrow" className="w-4 h-4" />

@@ -35,8 +35,8 @@ const Navbar = () => {
              <img src={arrow} alt="arrow" className="w-4 h-4 mr-2" />
           </div>
          </div>
-       <div className="flex items-center  bg-purple-300 rounded-md cursor-pointer 
-        hover:bg-purple-400 transition text-sm  ">
+       <div className="flex items-center  bg-[#C8B8E8] rounded-md cursor-pointer 
+        hover:bg-purple-200 transition text-sm  ">
         <div>
             <button
             className="px-4 py-2 text-sm font-semibold text-blackcursor-pointer rounded-md

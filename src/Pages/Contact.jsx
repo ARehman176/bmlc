@@ -49,8 +49,8 @@ const Contact = () => {
             <br /> team.
           </p>
           <button
-            className="bg-purple-200 hover:bg-purple-300 text-black font-medium px-4 py-2 
-          rounded-full transition mt-6"
+            className="bg-purple-200 hover:bg-purple-300 font-medium px-4 py-2 
+          rounded-md transition mt-6 shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
           >
             Get Support →
           </button>
@@ -69,8 +69,8 @@ const Contact = () => {
             Partner with Be My Life Coach <br /> or become a Life Coach.
           </p>
           <button
-            className="bg-purple-200 hover:bg-purple-300 text-black font-medium px-4 py-2 
-          rounded-full transition mt-6"
+            className="bg-purple-200 hover:bg-purple-300 font-medium px-4 py-2 
+          rounded-md transition mt-6 shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
           >
             Become a Partner →
           </button>
@@ -89,8 +89,8 @@ const Contact = () => {
             Share suggestions about our <br /> products or services.
           </p>
           <button
-            className="bg-purple-200 hover:bg-purple-300 text-black font-medium px-4 py-2
-           rounded-full transition mt-6"
+            className="bg-purple-200 hover:bg-purple-300 font-medium px-4 py-2 
+          rounded-md transition mt-6 shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
           >
             Share Feedback →
           </button>

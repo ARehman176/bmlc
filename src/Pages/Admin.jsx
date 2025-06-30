@@ -45,11 +45,11 @@ export default function AdminPanel() {
   ];
 
  const navTabs = [
-        { label: 'Home', icon: 'mynaui:home', to: '/Home' },
+        { label: 'Home', icon: 'mynaui:home', to: '/Admin' },
         { label: 'My Sessions', icon: 'solar:calendar-linear', to: '/Session' },
-        { label: 'Chats', icon: 'fluent:chat-20-regular', to: '/chats' },
-        { label: 'Earnings', icon: 'ant-design:dollar-outlined', to: '/earnings' },
-        { label: 'Availability', icon: 'tdesign:calendar-2', to: '/availability' },
+        { label: 'Chats', icon: 'fluent:chat-20-regular', to: '/Chats' },
+        { label: 'Earnings', icon: 'ant-design:dollar-outlined', to: '/Earnings' },
+        { label: 'Availability', icon: 'tdesign:calendar-2', to: '/Availability' },
         { label: 'Profile', icon: 'ant-design:setting-outlined', to: '/profile' },
         { label: 'Call History', icon: 'solar:phone-linear', to: '/calls' },
     ];
