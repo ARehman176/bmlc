@@ -10,10 +10,10 @@ const Life = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-52">
         {/* Left Side */}
         <div className="max-w-xl text-center md:text-left mr-20">
-          <h2 className="text-4xl font-bold text-gray-600 mb-4">
+          <h2 className="text-4xl font-bold text-[#454545] mb-4">
             Transform Your Life
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-[#454545] mb-8 ">
             Helping you live life to the fullest. Each of our Certified
             <br /> Life Coaches encourages and empowers you to build
             <br /> personal skills to manage life’s unexpected ups and <br />{" "}

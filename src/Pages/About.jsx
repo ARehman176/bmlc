@@ -11,15 +11,15 @@ return(
         {/* <Navbar /> */}
        <div className='flex justify-center mt-20 bg-[#F8F6FC] gap-100'>
         <div className='mt-10'>
-            <h1 className=' text-5xl mb-5 leading-tight'>
+            <h1 className=' text-5xl mb-5 leading-tight text-[#27272A]'>
                 Be My Life Coach Was Created <br />
                 With one Simple Belief:
             </h1>
-            <p className='font-semibold text-2xl mb-5'>
+            <p className='font-semibold text-2xl mb-5 text-[#27272A]'>
                 Getting The Support You Need Shuldn't Be <br />
                 Complicated.
             </p>
-            <p>
+            <p className='text-[#454545]'>
                 Wheather you're navigating career chaos, parenting stress, <br />
                 relationship strugles, or simply need someone to talk to, we believe <br />
                 connection shouldn't be delayed by paperwork ,contracts, or long <br/>
@@ -33,7 +33,7 @@ return(
        </div>
 
        <div>
-          <h1 className='text-center mt-20 text-5xl font-semibold leading-tight text-gray-700'>
+          <h1 className='text-center mt-20 text-5xl font-semibold leading-tight text-[#454545]  '>
             So We Built A Platform That Removes <br/>
             The Barriers
           </h1>
@@ -57,14 +57,14 @@ return(
 
           <div className='flex justify-center mt-20  gap-90 bg-[#F8F6FC]'>
             <div className='mt-30'>
-                <h1 className='font-semibold text-4xl leading-tight'>
+                <h1 className='font-semibold text-4xl leading-tight text-[#27272A]'>
                     Feeling Overwhelmed? <br/>
                     We're just A Tap Away.
                 </h1>
-                <p className='mt-6 mb-2 text-2xl'>
+                <p className='mt-6 mb-2 text-2xl text-[#454545]'>
                     Connect with a life coach __ no waiting, no judgment.
                 </p>
-                <h2 className='mb-4 mt-8 text-2xl font-semibold text-purple-300'>
+                <h2 className='mb-4 mt-8 text-2xl font-semibold text-[#9363C4]'>
                     Because When life Feels Heavy, <br />
                     Support should Feel Light.
                 </h2>

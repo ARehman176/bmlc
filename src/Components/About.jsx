@@ -16,17 +16,17 @@ const About = () => {
 
         {/* Text Section */}
         <div className="max-w-xl ml-20">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4 mt-10">
+          <h2 className="text-3xl font-semibold text-[#454545] mb-4 mt-10">
             About Us
           </h2>
-          <p className="text-gray-600 font-medium mb-4 text-2xl  ">
+          <p className="text-[#454545] font-medium mb-4 text-2xl  ">
             We started Be My Life Coach after seeing <br />
             close friends burn out from juggling <br />
             careers, motherhood, and everything in
             <br />
             between.
           </p>
-          <p className="text-gray-600 ">
+          <p className="text-[#454545] ">
             Our mission is simple: to make personalized support
             <br />
             as easy and accessible as texting a best friend.

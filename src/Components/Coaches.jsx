@@ -22,7 +22,7 @@ const coaches = [
 ];
 
 const FindCard = ({ coach }) => (
-  <div className="bg-white rounded-2xl shadow-md p-1 flex flex-col w-115 mt-20 ml-20   ">
+  <div className="bg-white rounded-2xl shadow-lg p-1 flex flex-col w-115 mt-20 ml-20  ">
     <img
       src={coach.image || tyle}
       alt={coach.name || "Coach"}
@@ -38,14 +38,17 @@ const FindCard = ({ coach }) => (
       {coach.rating || "4.9"}
       <img src={container} alt="Stars" className="w-20 h-4 ml-3" />
     </p>
-    <p className="text-sm text-gray-600 mb-1 ml-3">
+    <p className="text-sm text-gray-600 mt-1 ml-3">
       Calls: {coach.rateCall || "$6 / minute"}
     </p>
-    <p className="text-sm text-gray-600 mb-4 ml-3 font-semibold">
+    <p className="text-sm text-gray-600 mt-1 ml-3 font-semibold">
       Messages: {coach.rateMsg || "$6 / 100 word bundle"}
     </p>
+    <p className="text-sm text-gray-600 mb-4 mt-1 ml-3 font-semibold">
+      Minutes Balance: {coach.rateMsg || "2 minutes"}
+    </p>
 
-    <div className="flex   gap-2  ml-3 mb-2">
+    <div className="flex   gap-6   ml-3 mb-2">
       <button 
         className="flex items-center justify-center gap-2 bg-purple-300 text-black
        font-medium py-2 rounded cursor-pointer hover:bg-purple-400 transition w-28"
@@ -70,30 +73,31 @@ const FindCard = ({ coach }) => (
 
 const Find = () => {
   return (
-    <div className="bg-gray-100 p-6">
+    <div className="bg-gray-100 p-6 ">
       {/* Section Heading */}
-      <h2 className="text-3xl font-bold text-center text-gray-700 mb-2 mt-2">
+      <h2 className="text-3xl font-semibold text-center text-[#454545] mb-2 mt-2">
         Find Your Life Coach
       </h2>
 
       {/* Grid of Coaches */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
-        {coaches.map((coach, index) => (
-          <FindCard key={index} coach={coach} />
-        ))}
+      <div className="flex flex-wrap gap-4 justify-center">
+  {coaches.map((coach, index) => (
+    <FindCard key={index} coach={coach} />
+  ))}
 
-        {/* Button spanning all columns */}
-        <div className="col-span-full flex justify-center mt-8 mb-10">
-          <button
-            className="bg-purple-300 text-black font-semibold py-3 px-8 
-        rounded-md shadow-md hover:bg-purple-400 transition duration-300 ease-in-out 
-        cursor-pointer flex items-center gap-2"
-          >
-            See all life coaches
-            <img src={arrow} alt="arrow" className="w-4 h-4" />
-          </button>
-        </div>
-      </div>
+  {/* Button at the bottom centered across full width */}
+  <div className=" flex justify-center mt-8 mb-10">
+    <button
+      className="bg-purple-300 text-black font-semibold py-3 px-8 
+      rounded-md shadow-md hover:bg-purple-400 transition duration-300 ease-in-out 
+      cursor-pointer flex items-center gap-2"
+    >
+      See all life coaches
+      <img src={arrow} alt="arrow" className="w-4 h-4" />
+    </button>
+  </div>
+</div>
+
     </div>
   );
 };

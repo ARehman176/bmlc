@@ -6,11 +6,11 @@ const Download = () => {
   return (
     <div className="flex justify-center gap-45 mt-20">
       <div className="mt-12 ml-60">
-        <h2 className="text-3xl font-semibold">
+        <h2 className="text-3xl font-semibold text-[#454545]">
           Download Be My Life <br />
           Coach App
         </h2>
-        <p className="mt-8">
+        <p className="mt-8 text-[#454545]">
           Download Be My Life Coach app today to get started <br />
           on a better you for tomorrow
         </p>

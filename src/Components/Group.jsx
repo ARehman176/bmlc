@@ -4,8 +4,8 @@ const Group = () => {
   return (
     <div className="flex justify-center gap-100   bg-[#F8F6FC] ">
       <div>
-        <h2 className="font-semibold text-3xl mt-10">Group Coaching</h2>
-        <p className="mt-4 mb-20">
+        <h2 className="font-semibold text-3xl mt-10 text-[#454545]">Group Coaching</h2>
+        <p className="mt-4 mb-20 text-[#454545]">
           Intersted in group coaching for your team, workplace, or event? Fill
           out the form <br />
           below, and our team will get in touch with you with more information.

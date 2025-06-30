@@ -12,11 +12,11 @@ const Need = () => {
         />
 
         <div className="max-w-xl text-center md:text-left">
-          <h3 className="text-5xl  text-gray-600">
+          <h3 className="text-5xl  text-[#454545]">
             Coaching When You <br />
             Need it
           </h3>
-          <p className="mt-10 text-2xl text-gray-600">
+          <p className="mt-10 text-2xl text-[#454545] ">
             You can call or message your life coach at <br />
             anytime, from anywhere. You also get to <br />
             schedule coaching sessions when it's <br />

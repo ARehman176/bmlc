@@ -58,8 +58,28 @@ export default function SignUp() {
         </div>
 
         <form onSubmit={handleSubmit} className="max-w-md w-full mx-auto mt-16">
-          <h2 className="text-3xl font-semibold text-gray-800 mb-6">Sign Up</h2>
+          <h2 className="text-3xl font-semibold text-gray-800 mb-4 text-center">Meet our Coaches</h2>
+           <p className="font-semibold text-[#454545] text-center"> Learn more about their background and <br/>
+           their coaching experience</p>
+        
 
+          {/* Social Buttons */}
+          <div className="flex flex-col gap-3 mt-4">
+            <button className="flex items-center justify-center gap-3 border border-gray-300 py-2 rounded-lg hover:bg-gray-100">
+              <Icon icon="flat-color-icons:google" className="w-5 h-5" />
+              Continue with Google
+            </button>
+            <button className="flex items-center justify-center gap-3 border border-gray-300 py-2 rounded-lg hover:bg-gray-100">
+              <Icon icon="ic:baseline-apple" className="w-5 h-5" />
+              Continue with Apple
+            </button>
+          </div>
+                {/* Divider */}
+          <div className="flex items-center my-6">
+            <div className="flex-grow border-t border-gray-300" />
+            <span className="mx-4 text-sm text-gray-500">or</span>
+            <div className="flex-grow border-t border-gray-300" />
+          </div>
           {/* Name */}
           <div className="mb-4">
             <label className="block text-sm mb-1 text-gray-600">Name</label>
@@ -251,29 +271,14 @@ export default function SignUp() {
           {/* Submit */}
           <button
             type="submit"
-            className="w-full bg-[#C8B8E8] hover:bg-purple-400 text-black py-2 rounded-lg font-semibold transition-all"
+            className="w-full bg-[#C8B8E8] hover:bg-purple-400 text-black py-2 rounded-lg
+             font-semibold transition-all
+             shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
           >
-            Sign Up
+            Sign Up 
           </button>
 
-          {/* Divider */}
-          <div className="flex items-center my-6">
-            <div className="flex-grow border-t border-gray-300" />
-            <span className="mx-4 text-sm text-gray-500">or</span>
-            <div className="flex-grow border-t border-gray-300" />
-          </div>
-
-          {/* Social Buttons */}
-          <div className="flex flex-col gap-3">
-            <button className="flex items-center justify-center gap-3 border border-gray-300 py-2 rounded-lg hover:bg-gray-100">
-              <Icon icon="flat-color-icons:google" className="w-5 h-5" />
-              Sign up with Google
-            </button>
-            <button className="flex items-center justify-center gap-3 border border-gray-300 py-2 rounded-lg hover:bg-gray-100">
-              <Icon icon="ic:baseline-apple" className="w-5 h-5" />
-              Sign up with Apple
-            </button>
-          </div>
+       
 
           <p className="text-sm text-gray-500 text-center mt-8">
             Already have an account?{" "}
@@ -281,7 +286,7 @@ export default function SignUp() {
               className="text-purple-500 font-bold cursor-pointer"
               onClick={() => navigate("/Login")}
             >
-              Sign In
+              Login
             </span>
           </p>
         </form>
@@ -292,7 +297,7 @@ export default function SignUp() {
         <img
           src={mask}
           alt="Sign Up"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-fill"
         />
       </div>
     </div>

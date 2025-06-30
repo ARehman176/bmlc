@@ -5,6 +5,7 @@ import logo from "../assets/remove.png";
 import coach1 from "../assets/pic1.png";
 import client1 from "../assets/client1.png";
 import David from "./David";
+import { Link } from "react-router-dom";
 
 export default function AdminPanel() {
   const [collapsed, setCollapsed] = useState(false);
@@ -43,15 +44,15 @@ export default function AdminPanel() {
     },
   ];
 
-  const navTabs = [
-    { label: "Home", icon: "mynaui:home" },
-    { label: "My Sessions", icon: "solar:calendar-linear" },
-    { label: "Chats", icon: "fluent:chat-20-regular" },
-    { label: "Earnings", icon: "ant-design:dollar-outlined" },
-    { label: "Availability", icon: "tdesign:calendar-2" },
-    { label: "Profile", icon: "ant-design:setting-outlined" },
-    { label: "Call History", icon: "solar:phone-linear" },
-  ];
+ const navTabs = [
+        { label: 'Home', icon: 'mynaui:home', to: '/Home' },
+        { label: 'My Sessions', icon: 'solar:calendar-linear', to: '/Session' },
+        { label: 'Chats', icon: 'fluent:chat-20-regular', to: '/chats' },
+        { label: 'Earnings', icon: 'ant-design:dollar-outlined', to: '/earnings' },
+        { label: 'Availability', icon: 'tdesign:calendar-2', to: '/availability' },
+        { label: 'Profile', icon: 'ant-design:setting-outlined', to: '/profile' },
+        { label: 'Call History', icon: 'solar:phone-linear', to: '/calls' },
+    ];
 
   return (
     <div className="flex h-screen">
@@ -69,17 +70,18 @@ export default function AdminPanel() {
             </button>
           </div>
 
-          <nav className="mt-10 space-y-6">
-            {navTabs.map((tab, idx) => (
-              <div
-                key={idx}
-                className="flex items-center gap-4 cursor-pointer hover:bg-purple-300 hover:p-2 hover:rounded-xl hover:text-white"
-              >
-                <Icon icon={tab.icon} className="text-xl" />
-                {!collapsed && <span>{tab.label}</span>}
-              </div>
-            ))}
-          </nav>
+              <nav className="mt-6 md:mt-10 space-y-4 hidden md:block">
+                        {navTabs.map((tab, idx) => (
+                            <Link
+                                key={idx}
+                                to={tab.to}
+                                className="flex items-center gap-4 cursor-pointer hover:text-gray-700 hover:bg-[#C8B8E8] hover:font-semibold hover:rounded-lg py-2 px-2"
+                            >
+                                <Icon icon={tab.icon} className="text-xl" />
+                                {!collapsed && <span>{tab.label}</span>}
+                            </Link>
+                        ))}
+                    </nav>
         </div>
 
         {/* Logout Button */}
@@ -110,36 +112,43 @@ export default function AdminPanel() {
 
         {/* Upcoming Sessions */}
         <div className="mb-10">
+        
           <div className="flex justify-between items-center mb-3">
             <h2 className="text-2xl font-semibold">Upcoming Sessions</h2>
             <button className="text-purple-600 text-sm cursor-pointer">See All</button>
           </div>
           <div className="flex gap-8 overflow-x-auto pb-5">
+         
             {[1, 2, 3, 4, 5].map((item) => (
-              <div
-                key={item}
-                className="min-w-[300px] bg-purple-300/50 hover:bg-purple-400/50 p-4 rounded-xl shadow-lg cursor-pointer hover:shadow-md transition-all"
-                onClick={() => {
-                  setSelectedCoach({
-                    name: "John Doe",
-                    expertise: "Neurologist | Energy Healing | Tarot",
-                    availability: "21 June | 2:00 PM - 3:00 PM",
-                   
-                    image: coach1,
-                    bio: "Bio & introduction:",
-                    experience: "Experience:",
-                    Certifications: "Certifications:",
-                    Specialities: "Specialities:",
+             <div
+             
+  key={item}
+  className="min-w-[300px] bg-purple-300/50 hover:bg-purple-400/50 p-4 rounded-xl
+             shadow-lg cursor-pointer hover:shadow-md transition-all"
+  onClick={() => {
+    setSelectedCoach({
+      name: "John Doe",
+      expertise: "Neurologist | Energy Healing | Tarot",
+      availability: "21 June | 2:00 PM - 3:00 PM",
+      image: coach1,
+    });
+    setModalOpen(true);
+  }}
+>
+  {/* Flex container to align image and text in a row */}
+  
+  <div className="flex items-center gap-4 mb-2">
+    
+    <img src={coach1} className="h-12 w-12 rounded-full" alt="Coach" />
+    <div>
+      <h3 className="font-medium">Coach John Doe</h3>
+      <p className="text-sm text-gray-500">Mental Health and Well-being</p>
+    </div>
+  </div>
 
-                  });
-                  setModalOpen(true);
-                }}
-              >
-                <img src={coach1} className="h-12 w-12 rounded-full mb-2" alt="Coach" />
-                <h3 className="font-medium">Coach John Doe</h3>
-                <p className="text-sm text-gray-500">Career Coach</p>
-                <p className="text-sm mt-2 text-gray-600">21 June | 2:00 PM - 3:00 PM</p>
-              </div>
+  <p className="text-sm text-gray-600 ml-16 mt-2">21 June | 2:00 PM - 3:00 PM</p>
+</div>
+
             ))}
           </div>
         </div>
@@ -152,11 +161,11 @@ export default function AdminPanel() {
               <p>Filter :</p>
               <label className="flex items-center gap-1 cursor-pointer">
                 <input type="radio" name="filter" checked={filter === "busy"} onChange={() => setFilter("busy")} />
-                Most Busy
+                Most Busy Last Month
               </label>
-              <label className="flex items-center gap-1 cursor-pointer">
-                <input type="radio" name="filter" checked={filter === "rated"} onChange={() => setFilter("rated")} />
-                Top Rated
+              <label className="flex items-center gap-1 cursor-pointer ">
+                <input type="radio" name="filter"  checked={filter === "rated"} onChange={() => setFilter("rated")} />
+                Top Rated last Month
               </label>
             </div>
           </div>

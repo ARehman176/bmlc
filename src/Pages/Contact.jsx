@@ -11,11 +11,12 @@ const Contact = () => {
       <div
         className=" bg-purple-200 h-[450px] w-full overflow-hidden mt-4 relative backdrop-blur-3xl"
       >
+       
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mt-16">
+          <h2 className="text-4xl font-bold text-[#27272A] mt-16">
             Get In Touch!
           </h2>
-          <p className="text-gray-700 text-1xl mt-10">
+          <p className="text-[#27272A] text-1xl mt-10">
             We’re Here To Help And Answer Any Questions You Might Have. <br />
             We Look Forward To Hearing From You.
           </p>
@@ -40,10 +41,10 @@ const Contact = () => {
             icon="ph:headset-bold"
             className="text-purple-400 text-5xl mx-auto mb-4 -mt-2"
           />
-          <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">
+          <h3 className="text-xl font-semibold text-[#454545] mb-2 mt-6">
             Contact Support
           </h3>
-          <p className="text-gray-600 mb-4 mt-6">
+          <p className="text-[#7F7F7F] mb-4 mt-6">
             Get help from our support
             <br /> team.
           </p>
@@ -96,7 +97,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="m-8">
-        <h1 className="text-4xl md:text-4xl text-[#333333] text-center font-medium leading-snug
+        <h1 className="text-4xl md:text-4xl text-[#27272A] text-center font-medium leading-snug
          whitespace-nowrap p-2 pt-20 pb-10 capitalize">
           For any other inquiry, please use the form below.
         </h1>
@@ -105,7 +106,7 @@ const Contact = () => {
           {/* First & Last Name */}
           <div className="flex flex-col md:flex-row gap-4">
             <div className="w-full">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-[#454545] mb-1">
                 First Name
               </label>
               <input
@@ -115,7 +116,7 @@ const Contact = () => {
               />
             </div>
             <div className="w-full">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-[#454545] mb-1">
                 Last Name
               </label>
               <input
@@ -129,8 +130,8 @@ const Contact = () => {
           {/* Email */}
           <div className="flex flex-col md:flex-row gap-4">
             <div className="w-full">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Email
+              <label className="block text-sm font-medium text-[#454545] mb-1">
+                Email Address
               </label>
               <input
                 type="text"
@@ -139,7 +140,7 @@ const Contact = () => {
               />
             </div>
             <div className="w-full">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-[#454545] mb-1">
                 Subject
               </label>
               <input
@@ -152,7 +153,7 @@ const Contact = () => {
 
           {/* Message */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">
+            <label className="block text-sm font-medium text-[#454545] mb-1">
               Message
             </label>
             <textarea
@@ -166,8 +167,9 @@ const Contact = () => {
           <div className="flex flex-row items-center justify-center">
             <button
               type="submit"
-              className="bg-[#C8B8E8] px-6 h-12 text-black font-semibold border-black/10
-               hover:bg-purple-300 hover:text-black py-2 rounded-full transition-all"
+              className="bg-[#C8B8E8] px-6 h-12 text-black font-semibold 
+               hover:bg-purple-300 hover:text-black py-2 rounded-md
+               shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8] transition-all"
             >
               <span className="flex items-center gap-4">
                 <Icon icon="ion:paper-plane-outline" className="text-2xl" />

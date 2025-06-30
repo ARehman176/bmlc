@@ -89,6 +89,24 @@ export default function Login() {
             <p className="text-center leading-snug text-gray-500 pt-4">
               Make the most of your time.
             </p>
+              {/* Socials */}
+            <div className="flex flex-col gap-3 mt-4 mb-4">
+              <button className="flex items-center justify-center gap-3 border border-gray-300 py-2 
+              rounded-lg hover:bg-gray-100">
+                <Icon icon="flat-color-icons:google" className="w-5 h-5" />
+                continue with Google
+              </button>
+              <button className="flex items-center justify-center gap-3 border border-gray-300 py-2
+               rounded-lg hover:bg-gray-100">
+                <Icon icon="ic:baseline-apple" className="w-5 h-5" />
+                Continue with Apple
+              </button>
+            </div>
+            <div className="flex items-center my-6">
+              <div className="flex-grow border-t border-gray-300" />
+              <span className="mx-4 text-sm text-gray-500">or</span>
+              <div className="flex-grow border-t border-gray-300" />
+            </div>
 
             {/* Email */}
             <div className="mb-4">
@@ -134,29 +152,10 @@ export default function Login() {
               className="w-full bg-[#C8B8E8] text-gray-700 hover:bg-purple-600 hover:text-white
                py-2 rounded-lg font-semibold transition-all"
             >
-              Sign In
+              Log in
             </button>
 
-            {/* Divider */}
-            <div className="flex items-center my-6">
-              <div className="flex-grow border-t border-gray-300" />
-              <span className="mx-4 text-sm text-gray-500">or</span>
-              <div className="flex-grow border-t border-gray-300" />
-            </div>
-
-            {/* Socials */}
-            <div className="flex flex-col gap-3">
-              <button className="flex items-center justify-center gap-3 border border-gray-300 py-2 
-              rounded-lg hover:bg-gray-100">
-                <Icon icon="flat-color-icons:google" className="w-5 h-5" />
-                Sign in with Google
-              </button>
-              <button className="flex items-center justify-center gap-3 border border-gray-300 py-2
-               rounded-lg hover:bg-gray-100">
-                <Icon icon="ic:baseline-apple" className="w-5 h-5" />
-                Sign in with Apple
-              </button>
-            </div>
+       
 
             <p className="text-sm text-gray-500 text-center mt-20">
               Don't have an account?{" "}
@@ -175,7 +174,7 @@ export default function Login() {
           <img
             src={mask}
             alt="Sign In"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-fill"
           />
         </div>
       </div>

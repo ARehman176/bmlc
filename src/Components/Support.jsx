@@ -26,11 +26,11 @@ const Support = () => {
     <div className="flex  flex-col md:flex-row gap-10 p-8 md:p-16 bg-white  ">
       {/* Left Content */}
       <div className="flex-1 ml-50 mt-20 ">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-600 leading-snug mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#454545] leading-snug mb-4">
           Immediate Support For <br />
           Life's Pivotal Moments
         </h2>
-        <p className="text-gray-700 leading-relaxed">
+        <p className="text-[#454545] leading-relaxed ">
           Life doesn't wait for office hours. Whether you're
           <br />
           dealing with relationship stress, burnout, or just
@@ -53,7 +53,7 @@ const Support = () => {
           >
             <img src={item.icon} alt="" className="w-12 h-12 ml-4 mt-1" />
             <div>
-              <h4 className="text-lg font-semibold text-gray-800">
+              <h4 className="text-lg font-semibold text-gray-800 mt-2">
                 {item.title}
               </h4>
               <p className="text-gray-600">{item.text}</p>

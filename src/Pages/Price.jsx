@@ -12,7 +12,7 @@ const Price = () => {
     <div>
       {/* <Navbar /> */}
       <div className=" bg-[#F1EEF9] flex flex-col justify-center items-center p-8 mt-5">
-        <h1 className="text-4xl md:text-4xl text-[#333333] text-center font-medium capitalize leading-snug whitespace-nowrap p-6 m-2">
+        <h1 className="text-4xl md:text-4xl text-[#454545] text-center font-medium capitalize leading-snug whitespace-nowrap p-6 m-2">
           How Pricing Works
         </h1>
         <div className="flex flex-row justify-center items-center gap-25">
@@ -22,18 +22,18 @@ const Price = () => {
               <Icon icon="mdi-light:gift" className="w-10 h-10" />
             </div>
             <div>
-              <p className="text-[20px] font-semibold">
+              <p className="text-[20px] font-semibold text-[#33384B]">
                 Special Offer for New Users
               </p>
             </div>
             <hr className="w-70 border-t border-dotted border-gray-400 mt-4 mb-4" />
-            <p className="pr-8 pl-8  text-[12px] mt-4 text-gray-500 leading-snug">
+            <p className="pr-8 pl-8  text-[12px] mt-4 text-[#454545] leading-snug">
               All first-time users receive their first 5 minutes
               <br /> for just $4.99—whether connecting through
               <br /> voice calls or messaging.
             </p>
             <br />
-            <p className="pr-8 pl-5  text-[12px] text-gray-500 leading-snug">
+            <p className="pr-8 pl-5  text-[12px] text-[#454545] leading-snug">
               This exclusive offer is available only for new <br />
               users, giving you the chance to explore our
               <br /> platform with confidence.
@@ -45,21 +45,21 @@ const Price = () => {
               <Icon icon="mynaui:dollar" className="w-10 h-10" />
             </div>
             <div>
-              <p className="text-[20px] font-semibold ">Pricing</p>
+              <p className="text-[20px] text-[#33384B] font-semibold ">Pricing</p>
             </div>
             <hr className="w-70 border-t border-dotted border-gray-400 mt-4 mb-4" />
 
             <div className="flex items-center gap-3 mr-45 ">
               <Icon
                 icon="mingcute:phone-call-line"
-                className="w-6 h-6 text-purple-300 mt-6"
+                className="w-6 h-6 text-purple-300 mt-4"
               />
-              <span className="text-md font-medium text-gray-800 mt-5">
+              <span className="text-md font-medium text-gray-800 mt-4">
                 Voice Call
               </span>
             </div>
 
-            <p className="pr-8 pl-5  text-[12px] text-gray-500 mb-3 ">
+            <p className="pr-8 pl-5  text-[12px] text-[#454545] mb-3 ">
               Each life coach charges per minute. <br />
               Rates are clearly displayed on profiles.
             </p>
@@ -70,11 +70,11 @@ const Price = () => {
                 className="w-6 h-6 text-purple-300"
               />
               <span className="text-md font-medium text-gray-800">
-                Voice Call
+                Messaging
               </span>
             </div>
 
-            <p className="pr-8 pl-7  text-[12px] text-gray-500">
+            <p className="pr-8 pl-7  text-[12px] text-[#454545]">
               Messages are purchased in bundles of <br />
               100 words,priced per coach's rate.
             </p>
@@ -86,17 +86,17 @@ const Price = () => {
               <Icon icon="solar:card-broken" className="w-10 h-10" />
             </div>
             <div>
-              <p className="text-[20px] font-semibold">Purchasing Credits</p>
+              <p className="text-[20px] text-[#33384B] font-semibold">Purchasing Credits</p>
             </div>
             <hr className="w-70 border-t border-dotted border-gray-400 mt-4 mb-4" />
-            <p className="pr-8 pl-8 leading-snug text-[12px] text-gray-500 mb-3 mt-5">
+            <p className="pr-8 pl-8 leading-snug text-[12px] text-[#454545] mb-3 mt-5">
               To get started, you'll need to purchase credits
               <br />
               before initiating any voice or messaging <br />
               sessions.
             </p>
 
-            <p className="pr-8 pl-2 leading-snug text-[12px] text-gray-500 mt-6">
+            <p className="pr-8 pl-2 leading-snug text-[12px] text-[#454545] mt-2">
               Each credit equals $1, sp for example, 10 <br />
               credits = $10
             </p>

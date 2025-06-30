@@ -14,6 +14,7 @@ import SignUp from './Pages/Signup.jsx'
 import Admin from './Pages/Admin.jsx'
 import User from './Pages/User.jsx'
 import { Toaster } from 'react-hot-toast'
+import Session from './Pages/Session.jsx'
 
 const router = createBrowserRouter([
   {
@@ -37,7 +38,7 @@ const router = createBrowserRouter([
       { path: 'Signup', element: <SignUp /> },
       { path: 'Admin', element: <Admin /> },
       { path: 'User', element: <User /> },
-      
+      {path:"Session", element : <Session/>},
     ],
   },
 ])
