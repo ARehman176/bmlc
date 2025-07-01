@@ -23,7 +23,7 @@ const David = ({ isOpen, onClose, coach }) => {
 </button>
 
         {/* Profile Image */}
-        <div className="flex justify-center mt-2 mb-4">
+        <div className="flex justify-center -mt-1 mb-1">
           <img
             src={coach.image}
             alt={coach.name}
@@ -37,7 +37,7 @@ const David = ({ isOpen, onClose, coach }) => {
         <p className="text-center text-sm text-gray-600 mb-2">{coach.availability}</p>
 
         {/* Action Icons */}
-        <div className="flex justify-center gap-6 mb-2">
+        <div className="flex justify-center gap-6 mb-1">
           <a href="tel:+123456789" >
             <Icon icon="mdi:phone-outline" className="text-2xl border-1 text-purple-400 border-gray-400 rounded-md" />
           </a>
@@ -50,14 +50,13 @@ const David = ({ isOpen, onClose, coach }) => {
         </div>
 
         {/* About Section */}
-        <div className="mb-2">
+        <div className="mb-1">
           <h3 className="text-md font-medium mb-1">About John Doe</h3>
           <div className='border-1 border-gray-200 rounded-lg '>
           <p className="text-sm text-gray-600 mt-2 mb-2 p-1">{coach.about}
             John is seeking expert guidance on career transition and <br/>
             personal growth. He has previously consulted with life <br/>
-            coaches specializing in career and personal development. <br/>
-            motivation.
+            coach, and is eager to learn from industry experts.
           </p>
           
        
@@ -68,7 +67,7 @@ const David = ({ isOpen, onClose, coach }) => {
 
         {/* Save Button */}
         <button className="bg-[#C8B8E8] text-black  py-2 px-6 rounded-lg font-medium
-         hover:bg-purple-300 mb-3 mx-auto block
+         hover:bg-purple-300 mb-1 mx-auto block
          shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]">
           <div className='flex gap-2'>
           <div><Icon icon="material-symbols:movie-info-rounded" className="text-2xl " /></div>
@@ -98,8 +97,6 @@ const David = ({ isOpen, onClose, coach }) => {
         manage work stress. Highly recomended..."
       </p>
         </div>
-        
-    
         <div>
          
         </div>

@@ -12,7 +12,8 @@ const Price = () => {
     <div>
       {/* <Navbar /> */}
       <div className=" bg-[#F1EEF9] flex flex-col justify-center items-center p-8 mt-5">
-        <h1 className="text-4xl md:text-4xl text-[#454545] text-center font-medium capitalize leading-snug whitespace-nowrap p-6 m-2">
+        <h1 className="text-4xl md:text-4xl text-[#454545] text-center font-medium capitalize leading-snug
+         whitespace-nowrap p-6 m-2">
           How Pricing Works
         </h1>
         <div className="flex flex-row justify-center items-center gap-25">

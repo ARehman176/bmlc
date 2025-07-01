@@ -18,6 +18,7 @@ import Session from './Pages/Session.jsx'
 import Chats from './Pages/Chats.jsx'
 import Earnings from './Pages/Earnings.jsx'
 import Availability from './Pages/Availability.jsx'
+import Profile from './Pages/Profile.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -42,9 +43,9 @@ const router = createBrowserRouter([
       { path: 'User', element: <User /> },
       {path:"Session", element : <Session/>},
       {path:"Chats", element : <Chats/>},
- 
   {path:"Earnings", element : <Earnings/>},
    {path:"Availability", element : <Availability/>},
+    {path:"Profile", element : <Profile/>},
     ],
   },
 ])
