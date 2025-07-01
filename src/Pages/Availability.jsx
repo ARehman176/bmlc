@@ -14,7 +14,7 @@ const Availability = () => {
     { label: "Earnings", icon: "ant-design:dollar-outlined", to: "/Earnings" },
     { label: "Availability", icon: "tdesign:calendar-2", to: "/Availability" },
     { label: "Profile", icon: "ant-design:setting-outlined", to: "/profile" },
-    { label: "Call History", icon: "solar:phone-linear", to: "/calls" },
+    { label: "Call", icon: "solar:phone-linear", to: "/Call" },
   ];
   const unavailableDays = ["Sun", "Sat"];
   return (
@@ -62,7 +62,7 @@ const Availability = () => {
           </nav>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 ml-5">
           <button
             className="flex items-center gap-2 text-md hover:text-[#FF0000] hover:font-bold border
              border-[#FF0000] text-[#FF0000] p-2 rounded-lg"

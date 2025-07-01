@@ -9,13 +9,13 @@ const Earnings = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   const navTabs = [
-    { label: "Home", icon: "mynaui:home", to: "/AdminPanel" },
+    { label: "Home", icon: "mynaui:home", to: "/Admin" },
     { label: "My Sessions", icon: "solar:calendar-linear", to: "/Session" },
     { label: "Chats", icon: "fluent:chat-20-regular", to: "/Chats" },
     { label: "Earnings", icon: "ant-design:dollar-outlined", to: "/Earnings" },
     { label: "Availability", icon: "tdesign:calendar-2", to: "/Availability" },
     { label: "Profile", icon: "ant-design:setting-outlined", to: "/profile" },
-    { label: "Call History", icon: "solar:phone-linear", to: "/calls" },
+    { label: "Call History", icon: "solar:phone-linear", to: "/Call" },
   ];
 
   const users = [
@@ -108,7 +108,7 @@ const Earnings = () => {
           </nav>
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 ml-5">
           <button
             className="flex items-center gap-2 text-md hover:text-[#FF0000] hover:font-bold border border-[#FF0000] text-[#FF0000] p-2 rounded-lg"
             onClick={() => (window.location.href = "/")}
@@ -237,11 +237,11 @@ const Earnings = () => {
         </div>
       </div>
 
-      <div className="flex items-center gap-1 mt-8 ml-2">
-        <button className="px-3 py-2 bg-[#C8B8E8] text-white text-sm rounded">
-          <Icon icon="simple-icons:stripe" className="text-lg text-[#27272A]" />
+      <div className="flex items-center gap-0.5 mt-8 ml-2">
+        <button className="px-3 py-2 bg-[#C8B8E8] text-white text-sm rounded-tl-md rounded-bl-md">
+          <Icon icon="simple-icons:stripe" className="text-xl text-[#27272A]" />
         </button>
-        <button className="w-full px-4 py-2 bg-[#C8B8E8] text-sm rounded text-[#27272A]">
+        <button className="w-full px-4 py-2 bg-[#C8B8E8] text-sm rounded-tr-md rounded-br-md  text-[#27272A]">
           Disconnect Stripe account
         </button>
       </div>

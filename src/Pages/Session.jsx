@@ -15,12 +15,12 @@ const Session = () => {
 
   const navTabs = [
     { label: "Home", icon: "mynaui:home", to: "/Admin" },
-    { label: "My Sessions", icon: "solar:calendar-linear", to: "/Sessions" },
+    { label: "My Sessions", icon: "solar:calendar-linear", to: "/Session" },
     { label: "Chats", icon: "fluent:chat-20-regular", to: "/chats" },
     { label: "Earnings", icon: "ant-design:dollar-outlined", to: "/earnings" },
     { label: "Availability", icon: "tdesign:calendar-2", to: "/availability" },
     { label: "Profile", icon: "ant-design:setting-outlined", to: "/profile" },
-    { label: "Call History", icon: "solar:phone-linear", to: "/calls" },
+    { label: "Call History", icon: "solar:phone-linear", to: "/Call" },
   ];
 
   const today = new Date();
@@ -60,7 +60,7 @@ const Session = () => {
               className="cursor-pointer"
               onClick={() => setCollapsed(!collapsed)}
             >
-              <Icon icon="mdi:menu" className="text-purple-400 text-2xl" />
+              <Icon icon="mdi:menu" className="text-purple-400 text-2xl " />
             </button>
           </div>
           <nav className="mt-6 md:mt-10 space-y-4 hidden md:block">
@@ -78,10 +78,10 @@ const Session = () => {
         </div>
         <div className="mt-10">
           <button
-            className="flex items-center gap-2 text-md hover:text-[#FF0000] hover:font-bold border border-[#FF0000] text-[#FF0000] p-2 rounded-lg"
+            className="flex items-center gap-2 text-md ml-5 hover:text-[#FF0000] hover:font-bold border border-[#FF0000] text-[#FF0000] p-2 rounded-lg"
             onClick={() => (window.location.href = "/")}
           >
-            <Icon icon="mdi:logout" className="text-lg" />
+            <Icon icon="mdi:logout" className="text-lg " />
             {!collapsed && "Logout"}
           </button>
         </div>

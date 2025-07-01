@@ -19,6 +19,7 @@ import Chats from './Pages/Chats.jsx'
 import Earnings from './Pages/Earnings.jsx'
 import Availability from './Pages/Availability.jsx'
 import Profile from './Pages/Profile.jsx'
+import Call from './Pages/Call.jsx'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -46,6 +47,7 @@ const router = createBrowserRouter([
   {path:"Earnings", element : <Earnings/>},
    {path:"Availability", element : <Availability/>},
     {path:"Profile", element : <Profile/>},
+     {path:"Call", element : <Call/>},
     ],
   },
 ])
