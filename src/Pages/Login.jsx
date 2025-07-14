@@ -174,7 +174,7 @@ export default function Login() {
           <img
             src={mask}
             alt="Sign In"
-            className="w-full h-full object-fill"
+            className="w-full  object-fill"
           />
         </div>
       </div>

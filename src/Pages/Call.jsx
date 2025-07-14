@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/remove.png";
 import profileImage from "../assets/profile.png";
 
 const Call = () => {
@@ -14,7 +14,7 @@ const Call = () => {
     { label: "Earnings", icon: "ant-design:dollar-outlined", to: "/Earnings" },
     { label: "Availability", icon: "tdesign:calendar-2", to: "/Availability" },
     { label: "Profile", icon: "ant-design:setting-outlined", to: "/Profile" },
-    { label: "Call", icon: "solar:phone-linear", to: "/Call" },
+    { label: "Call History ", icon: "solar:phone-linear", to: "/Call" },
   ];
 
   return (
@@ -33,10 +33,8 @@ const Call = () => {
                 : "items-center justify-between"
             }`}
           >
-            <img src={logo} alt="Logo" className="h-8" />
-            <button onClick={() => setCollapsed(!collapsed)}>
-              <Icon icon="mdi:menu" className="text-purple-700 text-2xl" />
-            </button>
+            <img src={logo} alt="Logo" className="h-12 w-15 ml-2" />
+           
           </div>
 
           <nav className="mt-6 md:mt-10 space-y-4 hidden md:block">
@@ -70,7 +68,7 @@ const Call = () => {
       <div className="flex-1 p-6 overflow-y-auto">
         {/* Header */}
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl mt-4 text-[#27272A] font-bold">
+          <h1 className="text-3xl mt-4 text-[#27272A] font-semibold">
             Call History
           </h1>
           <div className="flex items-center gap-3">
@@ -85,7 +83,7 @@ const Call = () => {
         {/* Call History Card */}
         <div className="bg-white shadow rounded-xl p-6 w-full overflow-x-auto">
           <div className="flex justify-between items-center mb-4">
-            <h2 className="text-2xl font-bold text-[#27272A] mt-4 mb-4">
+            <h2 className="text-2xl font-semibold text-[#27272A] mt-4 mb-4">
               Call History with User
             </h2>
 

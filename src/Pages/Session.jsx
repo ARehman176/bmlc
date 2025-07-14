@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/remove.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import profileImage from "../assets/profile.png";
@@ -60,7 +60,7 @@ const Session = () => {
               className="cursor-pointer"
               onClick={() => setCollapsed(!collapsed)}
             >
-              <Icon icon="mdi:menu" className="text-purple-400 text-2xl " />
+              
             </button>
           </div>
           <nav className="mt-6 md:mt-10 space-y-4 hidden md:block">

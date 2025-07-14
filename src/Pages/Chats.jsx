@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/remove.png";
 import profileImage from "../assets/profile.png";
 import ChatBackground from "../assets/ChatBackground.png";
 
@@ -61,12 +61,7 @@ const userNames = [
               alt="Logo"
               className={`${collapsed ? "h-10 w-10 object-contain" : "h-[56px]"}`}
             />
-            <button
-              className="cursor-pointer"
-              onClick={() => setCollapsed(!collapsed)}
-            >
-              <Icon icon="mdi:menu" className="text-purple-400 text-2xl" />
-            </button>
+           
           </div>
 
           {/* Nav tabs */}
@@ -138,7 +133,7 @@ const userNames = [
 
 
     {/* Contact List */}
-  {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((chat, idx) => {
+  {[1, 2, 3, 4, 5,6,7].map((chat, idx) => {
   const unreadCounts = [3, 1, 5];
   const showNotification = idx < 3;
   const unread = unreadCounts[idx];
@@ -250,27 +245,7 @@ const userNames = [
     <span className="text-[10px] text-gray-500 mt-1">June 30, 2:44 PM</span>
   </div>
 
-  {/* Message Left */}
-  <div className="flex flex-col items-start">
-    <div className="relative max-w-xs">
-      <div className="bg-[#C8B8E8] text-gray-800 px-4 py-2 rounded-lg text-sm rounded-tl-none">
-        Perfect! Let me know if you have any questions.
-      </div>
-     
-    </div>
-    <span className="text-[10px] text-gray-500 mt-1">June 30, 2:45 PM</span>
-  </div>
-
-  {/* Message Right */}
-  <div className="flex flex-col items-end">
-    <div className="relative max-w-xs">
-      <div className="bg-white text-black px-4 py-2 rounded-lg text-sm rounded-tr-none">
-        Sure thing! Let’s crush this. 💪
-      </div>
-     
-    </div>
-    <span className="text-[10px] text-gray-500 mt-1">June 30, 2:46 PM</span>
-  </div>
+ 
 </div>
 
 

@@ -1,5 +1,5 @@
 import profileImage from "../assets/profile.png";
-import logo from "../assets/logo.png";
+import logo from "../assets/remove.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -8,13 +8,13 @@ const Availability = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   const navTabs = [
-    { label: "Home", icon: "mynaui:home", to: "/AdminPanel" },
+    { label: "Home", icon: "mynaui:home", to: "/Admin" },
     { label: "My Sessions", icon: "solar:calendar-linear", to: "/Session" },
     { label: "Chats", icon: "fluent:chat-20-regular", to: "/chats" },
     { label: "Earnings", icon: "ant-design:dollar-outlined", to: "/Earnings" },
     { label: "Availability", icon: "tdesign:calendar-2", to: "/Availability" },
     { label: "Profile", icon: "ant-design:setting-outlined", to: "/profile" },
-    { label: "Call", icon: "solar:phone-linear", to: "/Call" },
+    { label: "Call History", icon: "solar:phone-linear", to: "/Call" },
   ];
   const unavailableDays = ["Sun", "Sat"];
   return (
@@ -40,12 +40,7 @@ const Availability = () => {
                 collapsed ? "h-10 w-10 object-contain" : "h-[56px]"
               }`}
             />
-            <button
-              className="cursor-pointer"
-              onClick={() => setCollapsed(!collapsed)}
-            >
-              <Icon icon="mdi:menu" className="text-purple-400 text-2xl" />
-            </button>
+           
           </div>
 
           <nav className="mt-6 md:mt-10 space-y-4 hidden md:block">

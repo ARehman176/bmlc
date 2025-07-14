@@ -23,9 +23,9 @@ const About = () => {
           <p className="text-[#9363C4] font-semibold mb-6 mt-6">Only $4.99</p>
           <button
             className="bg-[#C8B8E8] hover:bg-purple-100  text-black font-medium px-2 py-2 gap-2 mt-8
-        rounded-md shadow flex items-center justify-center mx-auto md:mx-0"
+        rounded-md shadow flex items-center justify-center mx-auto md:mx-0 shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
           >
-            <img src={calendar} alt="" className="w-8 h-8" />
+            <img src={calendar} alt="" className="w-8 h-8  " />
             Purchase & Download Instantly
           </button>
           <p className="text-xs text-[#454545] mt-4">

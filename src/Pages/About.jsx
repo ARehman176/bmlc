@@ -8,13 +8,13 @@ import life from "../assets/life.png";
 const About = () => {
   return (
     <div>
-      <div className="flex justify-center mt-20 bg-[#F8F6FC] gap-100">
+      <div className="flex justify-center mt-20 bg-[#F8F6FC] gap-60">
         <div className="mt-10">
-          <h1 className=" text-5xl mb-5 leading-tight text-[#27272A]">
+          <h1 className=" text-4xl mb-5 leading-tight text-[#27272A]">
             Be My Life Coach Was Created <br />
             With one Simple Belief:
           </h1>
-          <p className=" text-2xl mb-5 text-[#27272A] font-semibold">
+          <p className=" text-1xl mb-5 text-[#27272A] font-semibold">
             Getting The Support You Need Shuldn't Be <br />
             Complicated.
           </p>

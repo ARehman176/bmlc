@@ -20,6 +20,14 @@ import Earnings from './Pages/Earnings.jsx'
 import Availability from './Pages/Availability.jsx'
 import Profile from './Pages/Profile.jsx'
 import Call from './Pages/Call.jsx'
+import Appointments from './Pages/Appointments.jsx'
+import Chatsuser from './Pages/Chatsuser.jsx'
+import Profileuser from './Pages/Profileuser.jsx'
+import Expensesuser from './Pages/Expensesuser.jsx'
+import Credit from './Pages/Credit.jsx'
+import Calluser from './Pages/Calluser.jsx'
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -44,10 +52,16 @@ const router = createBrowserRouter([
       { path: 'User', element: <User /> },
       {path:"Session", element : <Session/>},
       {path:"Chats", element : <Chats/>},
-  {path:"Earnings", element : <Earnings/>},
+      {path:"Earnings", element : <Earnings/>},
    {path:"Availability", element : <Availability/>},
     {path:"Profile", element : <Profile/>},
-     {path:"Call", element : <Call/>},
+     {path:"Call", element : <Call />},
+       {path:"Appointments", element : <Appointments />},
+          {path:"UserChats", element : <Chatsuser />},
+           {path:"Profileuser", element : <Profileuser />},
+           {path:"Expenseuser", element : <Expensesuser />},
+            {path:"Credit", element : <Credit />},
+            {path:"Calluser", element : <Calluser />},
     ],
   },
 ])

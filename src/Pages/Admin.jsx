@@ -14,34 +14,35 @@ export default function AdminPanel() {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const reviews = [
-    {
-      name: "Courtney Henry",
-      image: client1,
-      rating: 5,
-      time: "2 min ago",
-      text: "Incredibly insightful! Helped me gain clarity and confidence in my career choices. Great listener and provider of actionable advice. Highly recommended...",
-    },
-    {
-      name: "Courtney Henry",
-      image: client1,
-      rating: 4,
-      time: "1 hour ago",
-      text: "Incredibly insightful! Helped me gain clarity and confidence in my career choices. Great listener and provider of actionable advice. Highly recommended...",
-    },
-    {
-      name: "Courtney Henry",
-      image: client1,
-      rating: 5,
-      time: "Yesterday",
-      text: "Incredibly insightful! Helped me gain clarity and confidence in my career choices. Great listener and provider of actionable advice. Highly recommended...",
-    },
-    {
-      name: "Courtney Henry",
-      image: client1,
-      rating: 3,
-      time: "3 days ago",
-      text: "Incredibly insightful! Helped me gain clarity and confidence in my career choices. Great listener and provider of actionable advice. Highly recommended...",
-    },
+   {
+  name: "Courtney Henry",
+  image: client1,
+  rating: 5,
+  time: "2 min ago",
+  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
+},
+{
+  name: "Courtney Henry",
+  image: client1,
+  rating: 4,
+  time: "1 hour ago",
+  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
+},
+{
+  name: "Courtney Henry",
+  image: client1,
+  rating: 5,
+  time: "Yesterday",
+  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
+},
+{
+  name: "Courtney Henry",
+  image: client1,
+  rating: 3,
+  time: "3 days ago",
+  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
+},
+
   ];
 
   const navTabs = [
@@ -51,7 +52,7 @@ export default function AdminPanel() {
     { label: "Earnings", icon: "ant-design:dollar-outlined", to: "/Earnings" },
     { label: "Availability", icon: "tdesign:calendar-2", to: "/Availability" },
     { label: "Profile", icon: "ant-design:setting-outlined", to: "/profile" },
-    { label: "Call", icon: "solar:phone-linear", to: "/Call" },
+    { label: "Call History", icon: "solar:phone-linear", to: "/Call" },
   ];
   const sessions = [
     {
@@ -81,15 +82,18 @@ export default function AdminPanel() {
         "Samiullah specializes in mental and physical well-being coaching.",
       image: coach1,
     },
-    {
+      {
       id: 4,
       name: "John Doe",
-      expertise: "Confidence Coach",
-      time: "24 June | 10:00 AM - 11:00 AM",
+      expertise: "Health Coach",
+      time: "23 June | 4:00 PM - 5:00 PM",
       about:
-        "Rabia helps people regain confidence in personal and professional life.",
+        "Samiullah specializes in mental and physical well-being coaching.",
       image: coach1,
     },
+  
+    
+  
   ];
 
   return (
@@ -119,7 +123,7 @@ export default function AdminPanel() {
               className="cursor-pointer"
               onClick={() => setCollapsed(!collapsed)}
             >
-              <Icon icon="mdi:menu" className="text-purple-400 text-2xl" />
+             
             </button>
           </div>
 
@@ -172,14 +176,14 @@ export default function AdminPanel() {
           {/* Upcoming Sessions */}
           <div className="mb-10">
             <div className="flex justify-between items-center mb-3">
-              <h2 className="text-lg font-semibold">Upcoming Sessions</h2>
+              <h2 className="text-lg font-semibold ">Upcoming Sessions</h2>
               <button className="text-purple-600 text-sm">See All</button>
             </div>
-            <div className="flex gap-4 md:gap-8 overflow-x-auto pb-5">
+            <div className="flex gap-4 md:gap-6 overflow-x-auto pb-5">
               {sessions.map((session) => (
                 <div
                   key={session.id}
-                  className="min-w-[340px] bg-[#c8b8e8bd] p-4 rounded-xl shadow-xl cursor-pointer hover:shadow-md transition-all relative"
+                  className="min-w-[240px] bg-[#c8b8e8bd] p-4 rounded-xl shadow-md cursor-pointer hover:shadow-md transition-all relative"
                   onClick={() => {
                     setSelectedCoach({
                       name: session.name,
@@ -330,7 +334,7 @@ export default function AdminPanel() {
             {reviews.map((review, idx) => (
               <div
                 key={idx}
-                className="min-w-[300px] bg-white p-4 rounded-xl shadow relative"
+                className="min-w-[280px] bg-white p-4 rounded-xl shadow relative"
               >
                 <div className="flex items-center gap-3">
                   <img

@@ -3,7 +3,7 @@ import coach1 from "../assets/pic1.png";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/remove.png";
 
 const Earnings = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -21,44 +21,44 @@ const Earnings = () => {
   const users = [
     {
       name: "Sarah Thompson",
-      expertise: "Career Guidance & Personal Growth",
+      expertise: "Career Guidance & Personal",
       image: coach1,
-      date: "June 29, 2025",
+      date: "June 29,2025",
       amount: "$150.00",
     },
     {
       name: "James Miller",
       expertise: "Life Coaching & Confidence",
       image: coach1,
-      date: "June 28, 2025",
+      date: "June 28,2025",
       amount: "$130.00",
     },
     {
       name: "Amanda Lee",
-      expertise: "Mindfulness & Stress Management",
+      expertise: "Mindfulness & Stress",
       image: coach1,
-      date: "June 27, 2025",
+      date: "June 27,2025",
       amount: "$170.00",
     },
     {
       name: "Michael Chen",
       expertise: "Startup & Career Advice",
       image: coach1,
-      date: "June 26, 2025",
+      date: "June 26,2025",
       amount: "$200.00",
     },
     {
       name: "Linda Park",
       expertise: "Work-Life Balance",
       image: coach1,
-      date: "June 25, 2025",
+      date: "June 25,2025",
       amount: "$120.00",
     },
     {
       name: "Robert Green",
       expertise: "Financial Coaching",
       image: coach1,
-      date: "June 24, 2025",
+      date: "June 24,2025",
       amount: "$180.00",
     },
   ];
@@ -86,12 +86,7 @@ const Earnings = () => {
                 collapsed ? "h-10 w-10 object-contain" : "h-[56px]"
               }`}
             />
-            <button
-              className="cursor-pointer"
-              onClick={() => setCollapsed(!collapsed)}
-            >
-              <Icon icon="mdi:menu" className="text-purple-400 text-2xl" />
-            </button>
+           
           </div>
 
           <nav className="mt-6 md:mt-10 space-y-4 hidden md:block">
@@ -174,7 +169,7 @@ const Earnings = () => {
                         />
                       </div>
                       <p className="text-[#7F7F7F]">Date</p>
-                      <p className="text-lg font-semibold text-[#27272A]">
+                      <p className="text-md font-semibold text-[#27272A]">
                         {user.date}
                       </p>
                     </div>
@@ -200,7 +195,7 @@ const Earnings = () => {
         
           {/* Total Earnings Section Wrapper */}
 <div className="w-full lg:w-1/4 space-y-6">
-  {/* Heading OUTSIDE of card */}
+
   <h2 className="text-lg font-bold text-[#27272A] mb-2">Total Earning</h2>
 
   {/* Card Wrapper with Border */}
@@ -230,20 +225,23 @@ const Earnings = () => {
         Stripe Account
       </h3>
       <div className="border bg-[#F8F6FC] border-gray-200 rounded-lg ml-2 mb-2 px-4 py-2">
-        <div className="flex items-center justify-between text-sm text-gray-600">
-          <Icon icon="simple-icons:stripe" className="text-xl" />
-          <span className="font-semibold">Stripe Account .....2345</span>
-          <Icon icon="ic:round-play-arrow" className="text-2xl" />
+   <div className="flex items-center justify-between text-sm text-gray-600">
+          <Icon icon="simple-icons:stripe" className="text-xl mr-2" />
+         <span className="font-semibold whitespace-nowrap">Stripe Account.....2345</span>
+
+          <Icon icon="ic:round-play-arrow" className="text-3xl " />
         </div>
+
       </div>
 
       <div className="flex items-center gap-0.5 mt-8 ml-2">
         <button className="px-3 py-2 bg-[#C8B8E8] text-white text-sm rounded-tl-md rounded-bl-md">
           <Icon icon="simple-icons:stripe" className="text-xl text-[#27272A]" />
         </button>
-        <button className="w-full px-4 py-2 bg-[#C8B8E8] text-sm rounded-tr-md rounded-br-md  text-[#27272A]">
-          Disconnect Stripe account
-        </button>
+      <button className="w-full px-2 py-2 bg-[#C8B8E8] text-sm rounded-tr-md rounded-br-md text-[#27272A] whitespace-nowrap">
+  Disconnect Stripe account
+</button>
+
       </div>
     </div>
   </div>
@@ -256,3 +254,4 @@ const Earnings = () => {
 };
 
 export default Earnings;
+

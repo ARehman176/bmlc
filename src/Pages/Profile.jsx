@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/remove.png";
 import profileImage from "../assets/Avatar.png";
 import backgroundImage from "../assets/stroke.png";
 
@@ -44,9 +44,7 @@ const Profile = () => {
                 collapsed ? "h-10 w-10 object-contain" : "h-[56px]"
               }`}
             />
-            <button onClick={() => setCollapsed(!collapsed)}>
-              <Icon icon="mdi:menu" className="text-purple-400 text-2xl" />
-            </button>
+            
           </div>
 
           <nav className="mt-6 md:mt-10 space-y-4 hidden md:block">

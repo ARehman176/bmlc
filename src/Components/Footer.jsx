@@ -11,13 +11,13 @@ const Footer = () => {
   return (
     <div className="flex gap-60 justify-center  bg-purple-200">
       <div className="mb-20 mt-20">
-        <img src={coach} alt="" className="w-60 h-17 " />
+        <img src={coach} alt="" className="w-40 mt-3 " />
         <p className="mt-5 ml-4 text-[#454545]"> Privacy Policy</p>
         <p className="ml-4 mt-4 text-[#454545]"> Terms of Service</p>
       </div>
       <div className="mt-20">
         <h4 className="font-semibold text-lg mt-4 text-[#27272A]">Useful Links</h4>
-        <ul className="mt-13 mb-10 ">
+        <ul className="mt-10 mb-10 ">
           <li className="text-[#454545]"><Link to = "/">Home </Link></li>
           <li className="mt-3 text-[#454545]"><Link to= '/About'>About Us </Link></li>
           <li className="mt-3 text-[#454545]"> <Link to= '/price'>Pricing </Link></li>

@@ -22,7 +22,7 @@ const coaches = [
 ];
 
 const FindCard = ({ coach }) => (
-  <div className="bg-white rounded-2xl shadow-md p-1 flex flex-col w-115 mt-20 ml-20   ">
+  <div className="bg-white rounded-2xl shadow-md p-1 flex flex-col w-100 mt-20 ml-20   ">
     <img
       src={coach.image || tyle}
       alt={coach.name || "Coach"}

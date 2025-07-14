@@ -2,7 +2,7 @@ import React from "react";
 import jam from "../assets/jam.png";
 const Group = () => {
   return (
-    <div className="flex justify-center gap-100   bg-[#F8F6FC] ">
+    <div className="flex justify-center gap-100 bg-[#F8F6FC] ">
       <div>
         <h2 className="font-semibold text-3xl mt-10 text-[#454545]">Group Coaching</h2>
         <p className="mt-4 mb-20 text-[#454545]">
