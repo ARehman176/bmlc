@@ -3,20 +3,20 @@ import about from "../assets/about.png"; // Replace with your actual image path
 
 const About = () => {
   return (
-    <section className="bg-white py-16 px-4 md:px-24 mt-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row  gap-72">
+    <section className="bg-white py-16 px-4 md:px-24 mt-10">
+      <div className="flex justify-center gap-30">
         {/* Image Section */}
         <div className="flex-shrink-0">
           <img
             src={about}
             alt="About us"
-            className="w-[400px] h-auto rounded-3xl object-cover"
+            className="w-[300px] h-auto rounded-3xl object-cover"
           />
         </div>
 
         {/* Text Section */}
         <div className="max-w-xl ml-20">
-          <h2 className="text-3xl font-semibold text-[#454545] mb-4 mt-10">
+          <h2 className="text-4xl font-semibold text-[#454545] mb-4 mt-7">
             About Us
           </h2>
           <p className="text-[#454545] font-medium mb-4 text-2xl  ">

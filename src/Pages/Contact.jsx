@@ -9,7 +9,7 @@ const Contact = () => {
     <div>
       {/* <Navbar /> */}
       <div
-        className=" bg-purple-200 h-[450px] w-full overflow-hidden mt-4 relative backdrop-blur-3xl"
+        className=" bg-[#E6DFF5] h-[450px] w-full overflow-hidden mt-4 relative backdrop-blur-3xl"
       >
        
         <div className="text-center mb-16">
@@ -35,74 +35,57 @@ const Contact = () => {
           />
         </svg>
       </div>
-      <div className="flex justify-center gap-8 z-10 relative -mt-45 h-80 ">
-        <div className="bg-white rounded-2xl shadow-md text-center p-6 hover:shadow-xl transition">
-          <Icon
-            icon="ph:headset-bold"
-            className="text-purple-400 text-5xl mx-auto mb-4 -mt-2"
-          />
-          <h3 className="text-xl font-semibold text-[#454545] mb-2 mt-6">
-            Contact Support
-          </h3>
-          <p className="text-[#7F7F7F] mb-4 mt-6">
-            Get help from our support
-            <br /> team.
-          </p>
-          <button
-            className="bg-purple-200 hover:bg-purple-300 font-medium px-4 py-2 
-          rounded-md transition mt-6 shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
-          >
-            Get Support →
-          </button>
-        </div>
+      <div className="flex justify-center gap-8 z-10 relative -mt-45">
+  {/* Card 1 */}
+  <div className="bg-white rounded-2xl shadow-md text-center p-6 hover:shadow-xl transition w-[280px] h-[300px] flex flex-col justify-between">
+    <div>
+      <Icon icon="ph:headset-bold" className="text-purple-400 text-5xl mx-auto mb-4 -mt-2" />
+      <h3 className="text-xl font-semibold text-[#454545] mb-2 mt-6">Contact Support</h3>
+      <p className="text-[#7F7F7F] mt-6">Get help from our support<br />team.</p>
+    </div>
+   <button className="flex  justify-center items-center gap-2 bg-[#C8B8E8] hover:bg-purple-300 font-medium px-4 py-2 rounded-md transition 
+    shadow-[inset_0_2px_2px_#ffffff] border border-[#C8B8E8]">
+   Get Support
+  <Icon icon="maki:arrow" className="mt-1 text-base" />
+</button>
+  </div>
 
-        {/* Card 2 */}
-        <div className="bg-white rounded-2xl shadow-md text-center p-6 hover:shadow-xl transition">
-          <Icon
-            icon="mdi:handshake-outline"
-            className="text-purple-400 text-5xl mx-auto mb-4 -mt-2"
-          />
-          <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">
-            Partnership
-          </h3>
-          <p className="text-gray-600 mb-4 mt-6">
-            Partner with Be My Life Coach <br /> or become a Life Coach.
-          </p>
-          <button
-            className="bg-purple-200 hover:bg-purple-300 font-medium px-4 py-2 
-          rounded-md transition mt-6 shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
-          >
-            Become a Partner →
-          </button>
-        </div>
+  {/* Card 2 */}
+  <div className="bg-white rounded-2xl shadow-md text-center p-6 hover:shadow-xl transition w-[280px] h-[300px] flex flex-col justify-between">
+    <div>
+      <Icon icon="mdi:handshake-outline" className="text-purple-400 text-5xl mx-auto mb-4 -mt-2" />
+      <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">Partnership</h3>
+      <p className="text-gray-600 mt-6">Partner with Be My Life Coach<br />or become a Life Coach.</p>
+    </div>
+   <button className="flex justify-center items-center gap-2 bg-[#C8B8E8] hover:bg-purple-300 font-medium px-4 py-2 rounded-md transition 
+    shadow-[inset_0_2px_2px_#ffffff] border border-[#C8B8E8]">
+  Become a Partner
+  <Icon icon="maki:arrow" className="mt-1 text-base" />
+</button>
+  </div>
 
-        {/* Card 3 */}
-        <div className="bg-white rounded-2xl shadow-md text-center p-6 hover:shadow-xl transition">
-          <Icon
-            icon="material-symbols:feedback-outline"
-            className="text-purple-400 text-5xl mx-auto mb-4 -mt-2"
-          />
-          <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">
-            Feedback
-          </h3>
-          <p className="text-gray-600 mb-4 mt-6">
-            Share suggestions about our <br /> products or services.
-          </p>
-          <button
-            className="bg-purple-200 hover:bg-purple-300 font-medium px-4 py-2 
-          rounded-md transition mt-6 shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
-          >
-            Share Feedback →
-          </button>
-        </div>
-      </div>
+  {/* Card 3 */}
+  <div className="bg-white rounded-2xl shadow-md text-center p-6 hover:shadow-xl transition w-[280px] h-[300px] flex flex-col justify-between">
+    <div>
+      <Icon icon="material-symbols:feedback-outline" className="text-purple-300 text-5xl mx-auto mb-4 -mt-2" />
+      <h3 className="text-xl font-semibold text-gray-800 mb-2 mt-6">Feedback</h3>
+      <p className="text-gray-600 mt-6">Share suggestions about our<br />products or services.</p>
+    </div>
+    <button className="flex justify-center items-center gap-2 bg-[#C8B8E8] hover:bg-purple-300 font-medium px-4 py-2 rounded-md transition 
+    shadow-[inset_0_2px_2px_#ffffff] border border-[#C8B8E8]">
+   Share feedback
+  <Icon icon="maki:arrow" className="mt-1 text-base" />
+</button>
+  </div>
+</div>
+
       <div className="m-8">
-        <h1 className="text-4xl md:text-4xl text-[#27272A] text-center font-medium leading-snug
-         whitespace-nowrap p-2 pt-20 pb-10 capitalize">
+        <h1 className="text-4xl md:text-4xl text-[#27272A] text-center leading-snug
+         whitespace-nowrap p-2 pt-15 pb-5 capitalize">
           For any other inquiry, please use the form below.
         </h1>
 
-        <form className="max-w-3xl mx-auto bg-white p-10 rounded-2xl space-y-6 mb-30">
+        <form className="max-w-3xl mx-auto bg-white p-10 rounded-2xl space-y-6 ">
           {/* First & Last Name */}
           <div className="flex flex-col md:flex-row gap-4">
             <div className="w-full">

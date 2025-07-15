@@ -4,7 +4,7 @@ import calendar from "../assets/calendar.png";
 
 const Home = () => {
   return (
-    <section className="w-full bg-[#F1EEF9] py-16 px-4 md:px-12 mt-12  ">
+    <section className="w-full bg-[#F1EEF9] py-16 px-4 md:px-12 mt-5  ">
       <div className=" flex justify-between ml-17  md:flex-row items-center ">
         {/* Left Section */}
         <div className="md:w-1/2 mb-10 md:mb-0 ">
@@ -22,7 +22,7 @@ const Home = () => {
             to help you refocus and take your next step now.
           </p>
           <button
-            className="flex items-center gap-2 px-6 py-3 bg-[#BBA5E0] text-black font-medium
+            className="flex items-center gap-2 px-2 py-2 bg-[#BBA5E0] text-black font-medium
            rounded-md hover:bg-purple-300 transition duration-300 cursor-pointer
            shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]"
           >

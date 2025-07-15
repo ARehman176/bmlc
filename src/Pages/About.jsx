@@ -33,14 +33,14 @@ const About = () => {
       </div>
 
       <div>
-        <h1 className="text-center mt-20 text-5xl font-semibold leading-tight text-[#454545]  ">
+        <h1 className="text-center mt-20 text-5xl  leading-tight text-[#454545]  ">
           So We Built A Platform That Removes <br />
           The Barriers
         </h1>
       </div>
       <div className="flex justify-center mt-10 gap-18">
         <button
-          className=" h-35 w-55 bg-[linear-gradient(to_bottom_left,_#C8B8E866_10%,_white_28%,_white_20%,_#C8B8E866_100%)]
+          className=" h-35 w-55 bg-[linear-gradient(to_bottom_left,_#C8B8E866_0%,_white_15%,_white_15%,_#C8B8E866_100%)]
          rounded-xl shadow-xl"
         >
           <Icon
@@ -50,7 +50,7 @@ const About = () => {
           No forms
         </button>
         <button
-          className="h-35 w-55 bg-[linear-gradient(to_bottom_left,_#C8B8E866_10%,_white_28%,_white_20%,_#C8B8E866_100%)] 
+          className="h-35 w-55 bg-[linear-gradient(to_bottom_left,_#C8B8E866_0%,_white_15%,_white_15%,_#C8B8E866_100%)]
         rounded-xl shadow-xl"
         >
           <Icon
@@ -60,22 +60,22 @@ const About = () => {
           No fuss
         </button>
         <button
-          className=" w-55 h-35 bg-[linear-gradient(to_bottom_left,_#C8B8E866_10%,_white_28%,_white_20%,_#C8B8E866_100%)]
+          className=" w-55 h-35 bg-[linear-gradient(to_bottom_left,_#C8B8E866_0%,_white_15%,_white_15%,_#C8B8E866_100%)]
            rounded-xl shadow-xl"
         >
           <Icon
             className="h-12 w-40 text-purple-400 mb-2 ml-6"
             icon="flowbite:badge-check-outline"
           />
-          just real,instant access
+          Just real, instant access
           <br />
           to certified life coaches
         </button>
       </div>
 
-      <div className="flex justify-center mt-20  gap-90 bg-[#F8F6FC]">
+      <div className="flex justify-center mt-20  gap-25 bg-[#F8F6FC]">
         <div className="mt-35">
-          <h1 className="font-semibold text-4xl  leading-11.5 text-[#27272A]">
+          <h1 className="font-medium text-4xl  leading-11.5 text-[#27272A]">
             Feeling Overwhelmed? <br />
             We're just A Tap Away.
           </h1>

@@ -6,11 +6,11 @@ import graph from "../assets/graph.png";
 import talk from "../assets/talk.png";
 const Life = () => {
   return (
-    <section className="bg-purple-100 py-16 px-4 mt-20">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-52">
+    <section className="bg-purple-100 py-16 px-4 mt-10">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-38">
         {/* Left Side */}
-        <div className="max-w-xl text-center md:text-left mr-20">
-          <h2 className="text-4xl font-bold text-[#454545] mb-4">
+        <div className="max-w-xl text-center md:text-left mr-35">
+          <h2 className="text-4xl font-semibold text-[#454545] mb-4">
             Transform Your Life
           </h2>
           <p className="text-[#454545] mb-8 ">
@@ -54,7 +54,7 @@ const Life = () => {
 
         {/* Right Side */}
         <div className="relative">
-          <div className="w-110 h-145  ">
+          <div className=" h-125 mr-15 ">
             <img src={life} alt="Coach" className="w-full h-full " />
           </div>
           <div className="absolute top-1/2 right-[-40px] w-40 h-40 bg-purple-300 rounded-full z-[-1]"></div>

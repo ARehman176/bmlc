@@ -10,7 +10,7 @@ const Navbar = () => {
         <img src={logo} alt="Company Logo" className="h-10 w-auto ml-30" />
 
         {/* Navigation Menu */}
-        <ul className="hidden md:flex space-x-15 text-gray-700 font-medium">
+        <ul className="hidden md:flex space-x-15 text-[#454545] font-medium">
           <li className="hover:text-purple-300 cursor-pointer"> <Link to="/" >Home </Link></li>
 
           <li className="hover:text-purple-300 cursor-pointer"><Link to= "/About">About Us </Link></li>

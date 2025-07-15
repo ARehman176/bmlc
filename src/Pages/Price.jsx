@@ -12,11 +12,11 @@ const Price = () => {
     <div>
       {/* <Navbar /> */}
       <div className=" bg-[#F1EEF9] flex flex-col justify-center items-center p-8 mt-5">
-        <h1 className="text-4xl md:text-4xl text-[#454545] text-center font-medium capitalize leading-snug
+        <h1 className="text-4xl md:text-4xl text-[#454545] text-center  capitalize leading-snug
          whitespace-nowrap p-6 m-2">
           How Pricing Works
         </h1>
-        <div className="flex flex-row justify-center items-center gap-25">
+        <div className="flex flex-row justify-center items-center gap-10">
           {/* Card 1 */}
           <div className={cardProp}>
             <div className="bg-[#C8B8E8] rounded-full p-2 mb-2">
@@ -103,7 +103,7 @@ const Price = () => {
             </p>
           </div>
         </div>
-        <p className="mt-6 mr-128">
+        <p className="mt-6 mr-100">
           <span className="text-purple-600 font-medium">*Note:</span> Messaging
           for new user: Get 500 words for just
           <span className="text-purple-500 font-medium"> $4.99 </span>

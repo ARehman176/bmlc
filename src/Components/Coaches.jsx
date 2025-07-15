@@ -1,108 +1,111 @@
 import React from "react";
+import { FaStar, FaRegCalendarAlt, FaPhoneAlt } from "react-icons/fa";
 import tyle from "../assets/tyle.png";
-import container from "../assets/container.png";
-import calendar from "../assets/calendar.png";
-import call from "../assets/call.png";
-import chat from "../assets/chat.png";
-import arrow from "../assets/arrow.png";
+import { BsChatText } from "react-icons/bs";
 
-// Dummy coach data
-const coaches = Array(6).fill().map((_, i) => ({
-  name: `Tyla William `,
-  title: "Neurologist | Energy Healing | Tarot",
-  rating: (4.8 + (i % 2) * 0.1).toFixed(1),
-  rateCall: "$6 / minute",
-  rateMsg: "$6 / 100 word bundle",
-  balance: `${2 + i} minutes`,
-  image: tyle,
-}));
-
-// Coach Card Component
-const FindCard = ({ coach }) => (
-  <div className="bg-white rounded-2xl shadow-lg p-4 flex flex-col w-100">
-    <img
-      src={coach.image}
-      alt={coach.name}
-      className="w-36 h-24 mb-4 ml-3"
-    />
-    <h4 className="text-lg font-semibold text-gray-800 ml-3">
-      {coach.name}
-    </h4>
-    <p className="text-sm text-gray-500 mb-1 ml-3">{coach.title}</p>
-    <p className="flex items-center text-sm text-yellow-600 font-medium mb-2 ml-3">
-      {coach.rating}
-      <img src={container} alt="Stars" className="w-20 h-4 ml-3" />
-    </p>
-    <p className="text-sm text-gray-600 mt-1 ml-3">
-      Calls: {coach.rateCall}
-    </p>
-    <p className="text-sm text-gray-600 mt-1 ml-3 font-semibold">
-      Messages: {coach.rateMsg}
-    </p>
-    <p className="text-sm text-gray-600 mb-4 mt-1 ml-3 font-semibold">
-      Minutes Balance: {coach.balance}
-    </p>
-
-    {/* Buttons in one line, wrapping on small screens */}
-    <div className="flex gap-3 ml-3 mb-2 flex-wrap justify-start">
-      <button
-        className="flex items-center justify-center gap-2 bg-[#C8B8E8] text-black
-        font-medium py-2 px-3 rounded cursor-pointer hover:bg-purple-300 transition
-        shadow-[inset_0_2px_2px_#ffffff] border border-[#C8B8E8] min-w-[110px]"
-      >
-        <img src={calendar} alt="calendar" className="w-4 h-4" />
-        Book a call
-      </button>
-
-      <button
-        className="flex items-center justify-center gap-1 cursor-pointer text-purple-300
-        font-medium py-2 px-3 rounded transition border border-gray-200 min-w-[90px]"
-      >
-        <img src={call} alt="call" className="w-5 h-5" />
-        Call Now
-      </button>
-
-      <button
-        className="flex items-center justify-center gap-2 bg-white text-black cursor-pointer
-        font-medium py-2 px-3 rounded hover:bg-gray-100 transition border border-gray-300 min-w-[80px]"
-      >
-        <img src={chat} alt="chat" className="w-4 h-4" />
-        Chat
-      </button>
-    </div>
-  </div>
-);
-
-// Main Find Section
-const Find = () => {
+function Card({ coach }) {
   return (
-    <div className="bg-gray-100 p-6">
-      {/* Section Title */}
-      <h2 className="text-3xl font-semibold text-center text-[#454545] mb-6 mt-4">
-        Find Your Life Coach
-      </h2>
-
-      {/* Coaches Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
-        {coaches.map((coach, index) => (
-          <FindCard key={index} coach={coach} />
-        ))}
+    <div className="rounded-xl shadow p-4 sm:p-6 bg-[#F8F6FC] w-full max-w-[325px] flex flex-col">
+      <div className="relative">
+        <img
+          src={tyle}
+          alt={coach.name}
+          className="w-16 sm:w-20 h-16 sm:h-20 rounded-full object-cover"
+        />
+        <div className="absolute top-0 left-12 sm:left-14 bg-white px-1 py-0.5 flex items-center gap-1 rounded-full text-green-600 text-[10px] font-medium">
+          <span className="w-2 h-2 bg-green-500 rounded-full" />
+          Available
+        </div>
       </div>
 
-      {/* Bottom Button */}
-      <div className="flex justify-center mt-10 mb-10">
-        <button
-          className="bg-[#C8B8E8] text-black font-semibold py-3 px-8 
-          rounded-md hover:bg-purple-300 transition duration-300 ease-in-out 
-          cursor-pointer flex items-center gap-2 shadow-[inset_0_2px_2px_#ffffff] 
-          border border-[#C8B8E8]"
-        >
-          See all life coaches
-          <img src={arrow} alt="arrow" className="w-4 h-4" />
+      <h2 className="mt-4 text-sm sm:text-base font-semibold text-gray-800">
+        {coach.name}
+      </h2>
+      <p className="text-xs text-gray-500 mt-1 leading-tight">
+        {coach.expertise.join(" | ")}
+      </p>
+
+      <div className="flex items-center mt-2 text-yellow-500 text-xs">
+        <span className="font-medium text-gray-700 mr-1">{coach.rating}</span>
+        {Array.from({ length: 5 }).map((_, i) => (
+          <FaStar
+            key={i}
+            className={i < Math.round(coach.rating) ? "text-yellow-400" : "text-gray-300"}
+          />
+        ))}
+        <span className="text-gray-500 ml-2">({coach.reviews})</span>
+      </div>
+
+      <hr className="my-3 w-full text-gray-200" />
+
+      <div className="text-xs text-gray-600 w-full space-y-1">
+        <p>
+          <span className="font-normal">Call Rate:</span>{" "}
+          <span className="font-semibold">{coach.callRate}</span>
+        </p>
+        <p>
+          <span className="font-normal">Message Rate:</span>{" "}
+          <span className="font-semibold">{coach.messageRate}</span>
+        </p>
+        <p>
+          <span className="font-normal">Minute Balance:</span>{" "}
+          <span className="font-semibold">{coach.minuteBalance}</span>
+        </p>
+      </div>
+
+      <div className="mt-4 flex justify-between items-center w-full gap-2">
+        <button className="w-full flex-1 flex items-center justify-center gap-1.5 px-2 py-2 shadow-[inset_0_2px_2px_#ffffff] border-2
+         border-[#C8B8E8] bg-[#C8B8E8] text-black font-medium text-xs rounded-md hover:bg-purple-200 transition whitespace-nowrap cursor-pointer">
+          <FaRegCalendarAlt className="w-4 h-4 flex-shrink-0" />
+          <span className="whitespace-nowrap">Book a Call</span>
+        </button>
+        <button className="w-full flex-1 flex items-center justify-center gap-1.5 px-2 py-2 bg-white border border-[#BBA5E0]
+         text-[#9363C4] text-xs font-medium rounded-md hover:bg-gray-200 transition whitespace-nowrap cursor-pointer">
+          <FaPhoneAlt className="w-4 h-4 flex-shrink-0" />
+          <span className="whitespace-nowrap">Call Now</span>
+        </button>
+        <button className="w-full flex-1 flex items-center justify-center gap-1.5 px-2 py-2 bg-white border border-[#D4D4D8]
+         text-[#454545] text-xs font-medium rounded-md hover:bg-gray-200 transition whitespace-nowrap cursor-pointer">
+          <BsChatText className="w-4 h-4 flex-shrink-0" />
+          <span className="whitespace-nowrap">Chat</span>
         </button>
       </div>
     </div>
   );
-};
+}
 
-export default Find;
+function FindCoach() {
+  const coaches = Array.from({ length: 6 }).map((_, i) => ({
+    name: `Tyle William`,
+    expertise: ["Neurologist", "Energy Healing", "Tarot"],
+    rating: 4.9,
+    reviews: "12K",
+    callRate: "$2 / min",
+    messageRate: "$6 / 100 word bundle",
+    minuteBalance: "2 minutes",
+    image: tyle,
+  }));
+
+  return (
+    <div className="p-6 md:p-8 bg-[#F8F6FC] min-h-screen">
+      <h1 className="text-2xl md:text-3xl lg:text-[40px] text-[#454545] font-semibold  capitalize text-center mb-6 md:mb-12">
+        Find Your Coach
+      </h1>
+
+      <div className="flex flex-wrap justify-center gap-x-4 lg:gap-x-10 gap-y-6 lg:gap-y-8 max-w-full lg:max-w-[1060px] mx-auto">
+        {coaches.map((coach, idx) => (
+          <Card key={idx} coach={coach} />
+        ))}
+      </div>
+
+      <div className="flex justify-center mt-6 md:mt-12">
+        <button className="flex items-center gap-1 px-5 py-2 md:px-6 md:py-3 bg-[#C8B8E8] text-[#454545] text-xs md:text-sm 
+        cursor-pointer font-semibold rounded-lg shadow-[inset_0_2px_2px_#ffffff] border-2 border-[#C8B8E8] hover:bg-purple-200 transition">
+          View All Coaches
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default FindCoach;

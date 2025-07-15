@@ -25,7 +25,7 @@ const Support = () => {
   return (
     <div className="flex  flex-col md:flex-row gap-10 p-8 md:p-16 bg-white  ">
       {/* Left Content */}
-      <div className="flex-1 ml-20 mt-20 ">
+      <div className="flex-1 ml-26 mt-20 ">
         <h2 className="text-3xl md:text-4xl  font-semibold text-[#454545] leading-snug mb-4">
           Immediate Support For <br />
           Life's Pivotal Moments
@@ -44,7 +44,7 @@ const Support = () => {
       </div>
 
       {/* Right Content */}
-      <div className="flex-1 flex flex-col gap-6 mt-20 ml-50 ">
+      <div className="flex-1 flex flex-col gap-6 mt-16 ml-50 mr-25 ">
         {supportData.map((item, index) => (
           <div
             className="flex items-start   gap-4 bg-gray-100 rounded-xl shadow hover:scale-105 transition-transform 
