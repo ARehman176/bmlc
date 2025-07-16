@@ -93,11 +93,11 @@ const Availability = () => {
             <div className="flex items-start mb-4">
               <Icon
                 icon="ion:repeat-sharp"
-                className="ml-6 mr-2 text-xl mt-1"
+                className="ml-3 mr-2 text-xl mt-1"
               />
               <div>
-                <h1 className="text-lg font-semibold text-[#27272A]">Weekly Hours</h1>
-                <p className="-ml-6 text-[#7F7F7F]">
+                <h1 className="text-lg font-semibold text-[#27272A] ">Weekly Hours</h1>
+                <p className="-ml-7 text-[#7F7F7F]">
                   Set when you are typically available for meetings
                 </p>
               </div>
@@ -126,13 +126,13 @@ const Availability = () => {
 
                     {/* Time Inputs or Unavailable Text */}
                     {isUnavailable ? (
-                      <div className="flex items-center gap-2">
-                        <span className=" px-4 py-2 text-sm text-gray-600 rounded">
+                      <div className="flex items-center ">
+                        <span className="  py-2 text-sm text-gray-600 rounded">
                           Unavailable
                         </span>
                         <Icon
                           icon="simple-line-icons:plus"
-                          className=" ml-2 text-gray-500 text-xl"
+                          className=" ml-8 text-gray-500 text-xl"
                         />
                       </div>
                     ) : (
@@ -153,23 +153,23 @@ const Availability = () => {
 
                     {/* Action Icons (only for available days) */}
                     {!isUnavailable && (
-                      <div className="flex items-center  gap-2 ml-4">
+                      <div className="flex justify-center items-center  gap-2 ml-4">
                         <button title="Remove">
                           <Icon
                             icon="mdi:close"
-                            className="text-gray-500 text-2xl hover:scale-110 transition"
+                            className="text-[#454545] text-2xl hover:scale-110 transition cursor-pointer"
                           />
                         </button>
                         <button title="Add">
                           <Icon
                             icon="mdi:plus"
-                            className="text-gray-600 text-2xl hover:scale-110 transition"
+                            className="text-[#454545] text-2xl hover:scale-110 transition cursor-pointer"
                           />
                         </button>
                         <button title="Copy">
                           <Icon
                             icon="mdi:content-copy"
-                            className="text-gray-600 text-2xl hover:scale-110 transition"
+                            className="text-[#454545] text-2xl hover:scale-110 transition cursor-pointer"
                           />
                         </button>
                       </div>
@@ -187,14 +187,14 @@ const Availability = () => {
     <div className="flex items-center ml-2">
       <Icon
         icon="hugeicons:date-time"
-        className="mr-2 text-xl"
+        className="mr-2 text-xl text-[#27272A]"
       />
       <h1 className="text-lg font-semibold text-[#27272A]">Date-specific Hours</h1>
     </div>
-    <p className="text-[#7F7F7F] ml-8">Adjust hours for specific days</p>
+    <p className="text-[#7F7F7F] ml-3">Adjust hours for specific days</p>
   </div>
   
-  <button className="px-4 py-2 bg-gray-400 text-white rounded flex items-center gap-2">
+  <button className="px-2 py-1 -mb-2 bg-gray-400 text-white rounded flex items-center gap-2">
     <Icon icon="simple-line-icons:plus" className="text-white" />
     Hours
   </button>

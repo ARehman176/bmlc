@@ -169,7 +169,7 @@ const Call = () => {
                           ? "bg-green-100 text-green-600"
                           : call.status === "User Declined"
                           ? "bg-red-100 text-red-500"
-                          : "bg-yellow-100 text-yellow-600"
+                          : "bg-red-100 text-red-600"
                       }`}
                     >
                       {call.status}
@@ -199,8 +199,8 @@ const Call = () => {
           </table>
 
           {/* Footer Pagination */}
-          <div className="flex flex-row justify-between items-center mt-4 px-4">
-            <div className="flex items-center gap-2 text-sm text-gray-600">
+          <div className="flex flex-row justify-between items-center mt-4 px-4 ">
+            <div className="flex items-center gap-2 text-sm text-gray-600 -ml-1">
               <span>Rows per page:</span>
               <select className="rounded px-2 py-1 text-sm">
                 <option value="5" selected>

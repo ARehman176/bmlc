@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../assets/logo.png";
+// import logo from "../assets/logo.png";
+import coach from "../assets/coach.png";
 import { Link } from "react-router";
 import arrow from "../assets/arrow.png";
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
     <nav className="   mt-4  ">
       <div className=" flex items-center justify-between">
         {/* Logo */}
-        <img src={logo} alt="Company Logo" className="h-10 w-auto ml-30" />
+        <img src={coach} alt="Company Logo" className="h-10 w-auto ml-30" />
 
         {/* Navigation Menu */}
         <ul className="hidden md:flex space-x-15 text-[#454545] font-medium">

@@ -2,10 +2,11 @@ import React from "react";
 import { FaStar, FaRegCalendarAlt, FaPhoneAlt } from "react-icons/fa";
 import tyle from "../assets/tyle.png";
 import { BsChatText } from "react-icons/bs";
-
+import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react/dist/iconify.js";
 function Card({ coach }) {
   return (
-    <div className="rounded-xl shadow p-4 sm:p-6 bg-[#F8F6FC] w-full max-w-[325px] flex flex-col">
+    <div className="rounded-xl shadow p-4 sm:p-6 bg-[#ffffff] w-full max-w-[325px] flex flex-col">
       <div className="relative">
         <img
           src={tyle}
@@ -92,7 +93,7 @@ function FindCoach() {
         Find Your Coach
       </h1>
 
-      <div className="flex flex-wrap justify-center gap-x-4 lg:gap-x-10 gap-y-6 lg:gap-y-8 max-w-full lg:max-w-[1060px] mx-auto">
+      <div className="flex flex-wrap justify-center gap-x-4 lg:gap-x-10 gap-y-6 lg:gap-y-8 max-w-full lg:max-w-[1060px] mx-auto ">
         {coaches.map((coach, idx) => (
           <Card key={idx} coach={coach} />
         ))}
@@ -101,7 +102,8 @@ function FindCoach() {
       <div className="flex justify-center mt-6 md:mt-12">
         <button className="flex items-center gap-1 px-5 py-2 md:px-6 md:py-3 bg-[#C8B8E8] text-[#454545] text-xs md:text-sm 
         cursor-pointer font-semibold rounded-lg shadow-[inset_0_2px_2px_#ffffff] border-2 border-[#C8B8E8] hover:bg-purple-200 transition">
-          View All Coaches
+         <Link to ='/Coaches'> View All Coaches </Link>
+           <Icon icon='maki:arrow' className="w-4 h-4 text-[#454545] mt-1 ml-1  " />
         </button>
       </div>
     </div>

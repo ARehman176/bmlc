@@ -104,7 +104,7 @@ const Session = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-6">
-          <div className="bg-white px-6 pt-12 rounded-xl shadow-md w-full lg:w-2/3">
+          <div className="bg-white px- pt-12 rounded-xl shadow-md w-full lg:w-2/3">
             <div className="flex justify-between items-center mb-4">
               <div className="flex items-center gap-4">
                 <button
@@ -217,7 +217,7 @@ const Session = () => {
                 Upcoming Sessions
               </h3>
               <div className="space-y-4">
-                {[1, 2, 3, 4,].map((idx) => (
+                {[1, 2, 3, ].map((idx) => (
                   <div
                     key={idx}
                     className="flex flex-col justify-between rounded-xl shadow-sm border border-gray-200 h-full"
@@ -233,7 +233,7 @@ const Session = () => {
                           <h4 className="font-medium text-[#33384B]">
                             John Doe
                           </h4>
-                          <p className="text-[#AAB6C3] font-medium">
+                          <p className="text-[#AAB6C3] ">
                             Career Guidance & Personal Growth
                           </p>
                           <p className="text-sm flex flex-row gap-2 mt-2 mb-2 text-[#454545]">

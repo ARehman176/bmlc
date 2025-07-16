@@ -88,7 +88,7 @@ export default function Chatsuser() {
 
                 {/* Header */}
                 <div className="flex justify-between items-center w-full">
-                    <h1 className="text-2xl font-bold">Chats</h1>
+                    <h1 className="text-2xl font-bold ml-1 text-[#27272A]">Chats</h1>
                     <div className="flex items-center gap-3">
                         <img src={profileImage} alt="User profile" className="h-9 w-9 rounded-full" />
                         <div className="text-left text-sm text-gray-700">

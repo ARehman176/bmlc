@@ -135,6 +135,18 @@ export default function Credit() {
                                         rating: 0,
                                         review: "",
                                     },
+                                     {
+                                        id: "04",
+                                        lifecoach: "Tyle William",
+                                        date: "20-Jun-2025",
+                                        image: "https://randomuser.me/api/portraits/women/64.jpg",
+                                        cost: "$60",
+                                        duration: "20 mins",
+
+                                        status: "Completed",
+                                        rating: 4.5,
+                                        review: "Very helpful session!",
+                                    },
                                 ].map((call, index) => (
                                     <tr key={index} className="border-b border-gray-200 hover:bg-gray-50  hover:shadow-[0_2px_8px_rgba(147,99,196,0.3)]">
                                         <td className="py-2 px-2 text-center">{call.id}</td>
@@ -156,7 +168,7 @@ export default function Credit() {
                                                         ? "bg-green-100 text-green-600 px-8"
                                                         : call.status === "User Declined"
                                                             ? "bg-red-100 text-red-500 px-6"
-                                                            : "bg-yellow-100 text-yellow-600 px-5"
+                                                            : "bg-red-100 text-red-500 px-5"
                                                     }`}
                                             >
                                                 {call.status}

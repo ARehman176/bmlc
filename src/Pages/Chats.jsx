@@ -117,15 +117,15 @@ const userNames = [
    <div className="p-4 ">
   <h2 className="font-semibold text-[#374151] text-lg mb-2">Inbox</h2>
 
-  <div className="relative">
+  <div className="relative bg-[#D4D4D8] rounded-lg">
     <Icon
       icon="ic:round-search"
       className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg"
     />
     <input
       type="text"
-      placeholder="Search chats"
-      className="w-full pl-10 pr-3 py-2 text-sm border rounded-md focus:outline-none
+      placeholder="Search or starts new chat"
+      className="w-full pl-10 pr-3 py-2 text-sm  rounded-md focus:outline-none
        focus:ring-2 focus:ring-purple-300"
     />
   </div>
@@ -188,7 +188,7 @@ const userNames = [
         <span className="absolute bottom-0 right-0 h-3 w-3 bg-green-500 border-2 border-white rounded-full"></span>
       </div>
       <div>
-        <h4 className="text-gray-800 font-semibold text-sm">Sarah Thompson</h4>
+        <h4 className="text-gray-800 font-semibold text-sm">Jason Roy</h4>
         <p className="text-xs text-gray-500">Online</p>
       </div>
     </div>

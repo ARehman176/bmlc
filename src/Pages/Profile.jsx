@@ -105,7 +105,7 @@ const Profile = () => {
           </div>
 
           {/* Floating Profile Image */}
-          <div className="relative z-10 flex justify-center -mt-45 mb-10">
+          <div className="relative z-10 flex justify-center -mt-50 mb-10">
             <div className="relative w-32 h-32">
               <img
                 src={profileImage}
@@ -119,6 +119,7 @@ const Profile = () => {
                 />
               </button>
             </div>
+            
           </div>
 
           {/* Form Section */}
@@ -129,11 +130,11 @@ const Profile = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
               <div className="relative">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-2">
                   Name <span className="text-red-500">*</span>
                 </label>
                 <div className="absolute left-3 top-[33px] text-gray-400">
-                  <Icon icon="iconoir:user" className="w-5 h-5" />
+                  <Icon icon="iconoir:user" className="w-5 h-5 mt-2" />
                 </div>
                 <input
                   type="text"
@@ -143,11 +144,11 @@ const Profile = () => {
               </div>
 
               <div className="relative">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-2">
                   Email <span className="text-red-500">*</span>
                 </label>
                 <div className="absolute left-3 top-[33px] text-gray-400">
-                  <Icon icon="fluent:mail-20-regular" className="w-5 h-5" />
+                  <Icon icon="fluent:mail-20-regular" className="w-5 h-5 mt-2" />
                 </div>
                 <input
                   type="text"
@@ -157,11 +158,11 @@ const Profile = () => {
               </div>
 
               <div className="relative">
-                <label className="block text-sm font-medium text-gray-700 mb-1">
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-2">
                   Phone <span className="text-red-500">*</span>
                 </label>
                 <div className="absolute left-3 top-[33px] text-gray-400">
-                  <Icon icon="lucide:phone-call" className="w-5 h-5" />
+                  <Icon icon="lucide:phone-call" className="w-5 h-5 mt-2" />
                 </div>
                 <input
                   type="text"
@@ -173,11 +174,11 @@ const Profile = () => {
 
             {/* Bio Row */}
             <div className="relative">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-gray-700 mb-3">
                 Bio <span className="text-red-500">*</span>
               </label>
               <div className="absolute left-3 top-[34px] text-gray-400">
-                <Icon icon="mage:id-card" className="w-5 h-5" />
+                <Icon icon="mage:id-card" className="w-5 h-5 mt-2" />
               </div>
               <textarea
                 placeholder="Write a short bio about your self..."

@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react";
 import profileImage from "../assets/profile.png";
 import CoachCard from "../components/CoachCardComponent";
 
+
 const coaches = [
     {
         name: "Sarah Johnson",
@@ -186,7 +187,7 @@ const UserPanel = () => {
                         <p className="text-[#9363C4] text-xs -mt-4 mb-4">(Min: $10.00 to Max: $5000.00)</p>
 
                         <button onClick={handleConfirm} className="bg-[#C8B8E8] text-white px-20 ml-6 py-2 rounded-lg flex items-center gap-2
-                        bg-purple-300 transition duration-300 cursor-pointer
+                         transition duration-300 cursor-pointer
                          shadow-[inset_0_2px_2px_#ffffff] border-1 border-[#C8B8E8]">
                             <Icon icon="fluent:payment-20-regular" className="text-2xl text-black" />
                             <p className="text-black">Continue to payment</p>

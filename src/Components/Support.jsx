@@ -48,7 +48,7 @@ const Support = () => {
         {supportData.map((item, index) => (
           <div
             className="flex items-start   gap-4 bg-gray-100 rounded-xl shadow hover:scale-105 transition-transform 
-          duration-200 cursor-pointer w-[440px] h-[80px]"
+          duration-200 cursor-pointer w-[490px] h-[80px]"
             key={index}
           >
             <img src={item.icon} alt="" className="w-12 h-12 ml-4 mt-1" />

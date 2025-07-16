@@ -58,9 +58,9 @@ const Expensesuser = () => {
                                 value="chat"
                                 checked={selectedFilter === "chat"}
                                 onChange={() => setSelectedFilter("chat")}
-                                className="form-radio text-purple-600"
+                                className="form-radio text-purple-600 cursor-pointer"
                             />
-                            <span className="ml-2 text-sm text-gray-700">Chat Expenses</span>
+                            <span className="ml-2 text-sm text-gray-700 ">Chat Expenses</span>
                         </label>
                         <label className="inline-flex items-center">
                             <input
@@ -69,7 +69,7 @@ const Expensesuser = () => {
                                 value="call"
                                 checked={selectedFilter === "call"}
                                 onChange={() => setSelectedFilter("call")}
-                                className="form-radio text-purple-600"
+                                className="form-radio text-purple-600 cursor-pointer"
                             />
                             <span className="ml-2 text-sm text-gray-700">Call Expenses</span>
                         </label>

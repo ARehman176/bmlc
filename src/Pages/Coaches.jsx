@@ -12,9 +12,9 @@ const Coaches  = () => {
   return (
     <div>
         {/* <Navbar /> */}
-      {/* <CoachesCopy /> */}
+      <CoachesCopy />
      
-      <Coach />
+      {/* <Coach /> */}
       
       <Download />
       <Group />

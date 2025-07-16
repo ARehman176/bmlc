@@ -59,6 +59,30 @@ export default function Calluser() {
             image: "https://randomuser.me/api/portraits/women/36.jpg",
             review: "",
         },
+        {
+            id: "05",
+            title: "Mental Health Sickness",
+            name: "Steve Smith",
+            expertise: "Mental Health",
+            cost: "$110",
+            duration: "50 mins",
+            status: "Completed",
+            rating: 4.5,
+            image: "https://randomuser.me/api/portraits/men/87.jpg",
+            review: "Very helpful session!",
+        },
+        {
+            id: "01",
+            title: "Mental Health Sickness",
+            name: "Aron Finch",
+            expertise: "Mental Health",
+            cost: "$190",
+            duration: "90 mins",
+            status: "Completed",
+            rating: 4.5,
+            image: "https://randomuser.me/api/portraits/men/97.jpg",
+            review: "Very helpful session!",
+        },
     ];
 
     const handleAddReview = (user) => {
@@ -140,7 +164,7 @@ export default function Calluser() {
                                                 ? "bg-green-100 text-green-600 px-8"
                                                 : call.status === "User Declined"
                                                     ? "bg-red-100 text-red-500 px-6"
-                                                    : "bg-yellow-100 text-yellow-600 px-5"
+                                                    : "bg-red-100 text-red-500  px-5"
                                                 }`}
                                         >
                                             {call.status}
@@ -156,7 +180,7 @@ export default function Calluser() {
                                                 <span className="text-gray-500 text-sm">({call.review})</span>
                                             </div>
                                         ) : (
-                                            <div className='flex flex-row gap-2'> <p className='text-gray-400 font-extralight'>No review added yet.</p> <button
+                                            <div className='flex flex-row gap-2'> <p className='text-gray-400 font-extralight ml-1'>No review added yet.</p> <button
                                                 onClick={() => handleAddReview(call)}
                                                 className="text-[#9363C4] hover:text-[#7a50b2] flex items-center gap-2"
                                             >

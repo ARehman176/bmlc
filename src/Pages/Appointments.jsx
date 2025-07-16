@@ -33,7 +33,7 @@ export default function Appointments() {
                     </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row gap-6 mt-6">
+                <div className="flex flex-col lg:flex-row gap-6 mt-6 ">
                     <div className="bg-white px-6 pt-12 pb-12 rounded-xl shadow-md w-full lg:w-2/3">
                         <div className="flex justify-between items-center mb-4">
                             <div className="flex items-center gap-4">

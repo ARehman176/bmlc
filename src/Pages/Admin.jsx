@@ -14,34 +14,28 @@ export default function AdminPanel() {
   const [isModalOpen, setModalOpen] = useState(false);
 
   const reviews = [
-   {
-  name: "Courtney Henry",
-  image: client1,
-  rating: 5,
-  time: "2 min ago",
-  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
-},
-{
-  name: "Courtney Henry",
-  image: client1,
-  rating: 4,
-  time: "1 hour ago",
-  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
-},
-{
-  name: "Courtney Henry",
-  image: client1,
-  rating: 5,
-  time: "Yesterday",
-  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
-},
-{
-  name: "Courtney Henry",
-  image: client1,
-  rating: 3,
-  time: "3 days ago",
-  text: "Incredibly insightful!Helped me gain clarity and confidence in my career choices.\nGreat listener and provider of actionable advice.Highly recommended...",
-},
+    {
+      name: "Courtney Henry",
+      image: client1,
+      rating: 5,
+      time: "2 min ago",
+      text: "Incredibly insightful!Helped me gain clarity and \n confidence in my career choices.Great listener and \n provider of actionable advice.Highly recommended...",
+    },
+    {
+      name: "Courtney Henry",
+      image: client1,
+      rating: 4,
+      time: "1 hour ago",
+      text: "Incredibly insightful!Helped me gain clarity and \n confidence in my career choices.Great listener and \n provider of actionable advice.Highly recommended...",
+    },
+    {
+      name: "Courtney Henry",
+      image: client1,
+      rating: 5,
+      time: "Yesterday",
+      text: "Incredibly insightful!Helped me gain clarity and \n confidence in my career choices.Great listener and \n provider of actionable advice.Highly recommended...",
+    },
+
 
   ];
 
@@ -82,7 +76,7 @@ export default function AdminPanel() {
         "Samiullah specializes in mental and physical well-being coaching.",
       image: coach1,
     },
-      {
+    {
       id: 4,
       name: "John Doe",
       expertise: "Health Coach",
@@ -91,39 +85,36 @@ export default function AdminPanel() {
         "Samiullah specializes in mental and physical well-being coaching.",
       image: coach1,
     },
-  
-    
-  
+
+
+
   ];
 
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
       <div
-        className={`bg-white text-gray-600 p-4 md:p-6 transition-all flex flex-col justify-between ${
-          collapsed ? "w-20" : "w-full md:w-60"
-        } fixed md:static z-20 h-[60px] md:h-auto top-0 left-0 right-0`}
+        className={`bg-white text-gray-600 p-4 md:p-6 transition-all flex flex-col justify-between ${collapsed ? "w-20" : "w-full md:w-60"
+          } fixed md:static z-20 h-[60px] md:h-auto top-0 left-0 right-0`}
       >
         <div>
           <div
-            className={`flex ${
-              collapsed
+            className={`flex ${collapsed
                 ? "flex-col items-center gap-2"
                 : "items-center justify-between"
-            }`}
+              }`}
           >
             <img
               src={logo}
               alt="Logo"
-              className={`${
-                collapsed ? "h-10 w-10 object-contain" : "h-[56px]"
-              }`}
+              className={`${collapsed ? "h-10 w-10 object-contain" : "h-[56px]"
+                }`}
             />
             <button
               className="cursor-pointer"
               onClick={() => setCollapsed(!collapsed)}
             >
-             
+
             </button>
           </div>
 
@@ -326,15 +317,17 @@ export default function AdminPanel() {
         <div>
           <div className="flex justify-between items-center mb-3">
             <h2 className="text-2xl font-semibold">My Reviews</h2>
-            <button className="text-purple-600 text-sm cursor-pointer">
-              See All
+            <button className="flex items-center space-x-1 text-[#9363C4] text-sm cursor-pointer">
+              <span>See All</span>
+              <Icon icon="maki:arrow" className="text-md " />
             </button>
+
           </div>
           <div className="flex gap-4 overflow-x-auto pb-2">
             {reviews.map((review, idx) => (
               <div
                 key={idx}
-                className="min-w-[280px] bg-white p-4 rounded-xl shadow relative"
+                className="min-w-[400px] bg-white p-4 rounded-xl shadow relative"
               >
                 <div className="flex items-center gap-3">
                   <img
@@ -353,7 +346,7 @@ export default function AdminPanel() {
                     {review.time}
                   </div>
                 </div>
-                <p className="text-sm text-gray-600 mt-3 whitespace-pre-line">
+                <p className="text-sm text-[#454545] mt-3 whitespace-pre-line">
                   {review.text}
                 </p>
               </div>
